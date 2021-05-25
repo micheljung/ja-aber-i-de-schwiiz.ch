@@ -1,0 +1,39 @@
+<script type="module">
+  import { h, Component } from 'https://unpkg.com/preact?module';
+  import { html, render } from 'https://unpkg.com/htm/preact/index.mjs?module'
+  
+  class Justification {
+    constructor(claim, refutation) {
+      this.claim = claim;
+      this.refutation = refutation;
+    }
+  }
+  
+  const justifications = [
+    new Justification(
+      "Tiere zu töten verursacht kein Leid",
+      html`
+      Der Duden definiert Leid als <q>Unrecht, Böses, das jemandem zugefügt wird</q>. Selbst wenn es einem Tier keinen Schmerz verursachen würde,
+      wenn wir ihm mit einem Bolzenschussgerät in den Kopf schiessen, Strom durch das Gehirn fliessen lassen oder mit Gas ersticken, und
+      anschliessend die Kehle durchschneiden und es verbluten lassen, so ist dies ohne Zweifel böses Unrecht, das wir jemandem zufügen.
+      `
+    )
+  ];
+  
+  function JustificationComponent (props) {
+    return html`
+    <h2>${props.justification.claim}</h2>
+    <p>${props.justification.refutation}</p>
+    `;
+  }
+
+  
+  function App (props) {
+    return html`
+    <h1>Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition</h1>
+    ${props.justifications.map((justification, index) => html`<${JustificationComponent} key="${index}" justification="${justification}" />`)}
+    `;
+  }
+
+  render(html`<${App} justifications="${justifications}" />`, document.body);
+</script>
