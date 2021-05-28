@@ -619,8 +619,9 @@
   
   function JustificationComponent (props) {
     return html`
-    <h2>Ja, aber ${props.justification.claim}</h2>
+    <li><h2>Ja, aber ${props.justification.claim}</h2>
     <p>${props.justification.refutation}</p>
+    </li>
     `;
   }
 
@@ -628,7 +629,9 @@
   function App (props) {
     return html`
     <h1>Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition</h1>
+    <ol>
     ${props.justifications.map((justification, index) => html`<${JustificationComponent} key="${index}" justification="${justification}" />`)}
+    </ol>
     `;
   }
 
