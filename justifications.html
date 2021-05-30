@@ -1,14 +1,97 @@
+<style type="text/css">
+    html,
+    body {
+        background-image: none;
+        background-color: #22272E;
+        font-family: sans-serif;
+    }
+
+    body * {
+        color: #adbac7;
+        background-color: #22272E;
+    }
+
+    a,
+    a * {
+        color: rgba(80, 250, 123, 1);
+        background-color: transparent;
+    }
+
+    a:hover,
+    a:hover *,
+    a:visited:hover,
+    a:visited:hover *,
+    span[onclick]:hover,
+    div[onclick]:hover,
+    [role="link"]:hover,
+    [role="link"]:hover *,
+    [role="button"]:hover *,
+    [role="menuitem"]:hover,
+    [role="menuitem"]:hover *,
+    .link:hover,
+    .link:hover * {
+        color: rgba(241, 250, 140, 1);
+    }
+
+    a:visited,
+    a:visited * {
+        color: rgba(98, 114, 164, 1);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    [id*="headline"],
+    [class*="headline"],
+    [id*="header"],
+    [class*="header"],
+    [class*="header"] td {
+        color: #adbac7;
+    }
+
+    [id*="overlay"],
+    [id*="lightbox"],
+    blockquote {
+        background-color: rgba(68, 71, 90, 1);
+    }
+
+    textarea {
+        background: rgba(68, 71, 90, 1);
+    }
+
+    div,
+    ul,
+    li {
+        background-image: none;
+    }
+
+    a.highlight,
+    a.highlight *,
+    a.active,
+    a.active *,
+    .selected,
+    .selected *,
+    [href="#"] {
+        font-weight: bold;
+        color: rgba(139, 233, 253, 1);
+    }
+
+</style>
 <script type="module">
   import { h, Component } from 'https://unpkg.com/preact?module';
   import { html, render } from 'https://unpkg.com/htm/preact/index.mjs?module'
-  
+
   class Justification {
     constructor(claim, refutation) {
       this.claim = claim;
       this.refutation = refutation;
     }
   }
-  
+
   const justifications = [
     new Justification(
       "Tiere zu töten verursacht kein Leid",
@@ -45,9 +128,10 @@
       "Kühe müssen gemolken werden",
       html`
       Wie alle Säugetiere geben Kühe nur Milch, um Ihre Jungen zu nähren. Es ist ein weit verbreiteter Irrglaube, dass sie andauernd Milch
-      produzieren. Würden wir Kühe nicht schwängern, würden sie keine Milch geben. Würden wir ihre Kinder nicht wegnehmen, müssten sie nicht
-      gemolken werden. Würden wir sie nicht zu Leistungsmaschinen heranzüchten, würden sie nicht zu viel Milch produzieren. Wie können wir
-      all dies einem Tier antun und dann behaupten, wir täten ihm einen Gefallen?
+      produzieren. Würden wir Kühe nicht schwängern, würden sie keine Milch geben. Würden wir sie nicht zu
+      Leistungsmaschinen heranzüchten, würden sie nicht zu viel Milch produzieren. Würden wir ihre Kinder nicht
+      wegnehmen, müssten sie nicht gemolken werden. Wie können wir all dies einem Tier antun und dann behaupten, wir
+      täten ihm einen Gefallen? Wir melken Kühe nicht aus Selbstlosigkeit, sondern aus reinem Egoismus.
       `
     ),
     new Justification(
@@ -149,7 +233,7 @@
       html`
       Löwen sind obligatorische Fleischesser. Anders als wir essen sie Tiere um zu überleben. Wir sind jedoch weder obligatorische
       Fleischesser sind, noch kämpfen wird in der Wildnis um unser Überleben. Löwen üben noch viele weitere Verhaltensweisen aus.
-      So urinieren sie beispielsweise ins Gebüsch und verteilen ihren Uringeruch mit ihren Füssen, um ihr Revier zu markieren. Oder 
+      So urinieren sie beispielsweise ins Gebüsch und verteilen ihren Uringeruch mit ihren Füssen, um ihr Revier zu markieren. Oder
       sie töten die Jungtiere des besiegten Vaters, um diese nicht aufziehen zu müssen. Weshalb tun wir diese Dinge nicht? Weil das
       Verhalten von Löwen für uns irrelevant ist.
       `
@@ -167,7 +251,8 @@
       html`
       Der Mensch ist in vielerlei Hinsicht kein Fleischesser. Der Anblick von toten Tieren, Blut und Eingeweiden verdirbt den meisten von
       uns den Appetit. Kaum einer tötet die Tiere selbst, dessen Körper er isst. Rohes Fleisch ist für uns grundsätzlich schlecht
-      verdaulich, weshalb wir es zerhacken und kochen. Wir sind sehr wählerisch bei den Körperteilen, die wir essen. Die Länge unseres
+      verdaulich, weshalb wir es zerhacken und kochen. Wir sind sehr wählerisch bei den Körperteilen, die wir essen, und
+      noch viel wählerischer bei den Tieren, die wir essen. Die Länge unseres
       Darmes und die Zusammensetzung unserer Magensäure ist mit derjenigen von Pflanzenfressern vergleichbar, nicht mit derjenigen von
       Fleischfressern. Fleisch zu essen ist für uns also keineswegs natürlich.
       `
@@ -211,7 +296,7 @@
       zulassen. Wir sperren sie ein, schwängern sie, nehmen ihre Kinder weg, stehlen ihre Milch, ersticken sie, töten sie und sagen, sie
       sollen dankbar sein? Diese Aussage ist unglaublich arrogant und kann nur von jemandem benutzt werden, der ein angenehmes Leben führt.
       Niemand, der echtes Leiden erfahren hat, würde jemals behaupten, dass man dankbar für ein Leben ausschliesslich bestehend aus
-      Ausbeutung, Angst, Schmerz und Tod sein sollte.      
+      Ausbeutung, Angst, Schmerz und Tod sein sollte.
       `
     ),
     new Justification(
@@ -317,7 +402,7 @@
       <p>Versuchst du, andere Menschen nicht zu verletzen? Wieso, wenn du es sowieso nie schaffen wirst, niemanden zu verletzen?
       Wir leben in einer Welt, in der es praktisch unmöglich ist, jegliches Tierleid zu vermeiden. Dies ist jedoch kein Grund
       dafür, es gar nicht erst zu versuchen.</p>
-      
+
       <p>Unsere alleinige Existenz verursacht Leid. Vegan zu sein bedeutet nicht naiv zu denken: <q>Ich bin perfekt, ich schade
       niemandem</q>. Es geht darum das Leid zu erkennen, das wir verursachen, und dieses zu minimieren. Tiere nicht absichtlich
       auszubeuten, ihnen den Kopf abzuschneiden und sie zu essen ist das <strong>mindeste</strong>, was wir tun können.</p>
@@ -571,7 +656,7 @@
       "unsere Haustiere benötigen Fleisch",
       html`
       <p>Was man seinem Haustier zu essen gibt hat nichts damit zu tun, was man selbst konsumiert.</p>
-      <p>Als Tierhalter ist man für das Leid, welches das eigene Tier verursacht, mitverantwortlich. 
+      <p>Als Tierhalter ist man für das Leid, welches das eigene Tier verursacht, mitverantwortlich.
       Hat man ein Haustier, das auch ohne Fleisch ein gesundes Leben führen kann, so ist es sinnvoll, es fleischlos
       zu ernähren. Ist man der Meinung, dass es absolut zwingend mit Fleisch gefüttert werden muss, so wird man dies wohl tun.
       Die Alternative, die wohl keiner mag, wäre, sich dem Tier zu entledigen. Mann könnte argumentieren, dass dies ja auch
@@ -594,16 +679,34 @@
       zu verschwenden.</p>
       `
     ),
-    new Justification(
+      new Justification(
       "für Handys arbeiten Kinder in Kobalt-Minen",
       html`
       <p>Der Kauf tierischer Produkte hilft nicht, diese Situation zu verbessern. Nur weil wir Leid an einem Ort
       verursachen, bedeutet dies nicht, dass wir Leid auch an einem anderen Ort verursachen müssen. Das sind zwei völlig
       getrennte Probleme.</p>
       `
-    ),
+      ),
+      new Justification(
+      "wir Menschen haben grössere Probleme",
+      html`
+      <p>Ignorieren wir für einen Moment, dass der Konsum tierischer Produkte massive negative Folgen für die heutige
+      und vor allem auf die kommenden Generationen hat. Aus der Sicht der Tiere ist es ein gigantisches Problem. Wir
+      töten rund 3.5 Milliarden Tiere - jeden Tag. Würden wir so viele Menschen wie Tiere töten, so wären wir nach rund
+      2 Tagen ausgestorben.</p>
+      <p>Betrachten wir das aus egoistischer Sicht, so ist es einfach zu sagen, <strong>wir</strong> haben grössere
+      Probleme. Doch dies ist keine moralische Rechtfertigung für das unnötige Töten anderer. Ansonsten müsste es für
+      Menschen der Gruppe A auch moralisch sein, Menschen der Gruppe B zu töten - denn Gruppe A hat grössere Probleme
+      als die Verschonung von Gruppe B. Jeder dürfte töten wen er will, denn jeder hat grössere Probleme als andere
+      am Leben zu lassen.</p>
+      <p>Wir sehen uns als intelligente und mitfühlende Wesen. Wir sind fast alle in der Lage, uns in andere
+      hineinzuversetzen. Tiere können gelten als "andere" und können genauso Angst, Schmerz und Leid erfahren wie wir
+      Menschen. Ihnen unnötig Leid zuzufügen mit der Rechtfertigung "wir Menschen haben grössere Probleme" ist alles
+      andere als intelligent und mitfühlend.</p>
+      `
+      ),
     new Justification(
-      "es gibt noch viele andere Probleme auf dieser Welt, wir können nicht alle lösen",
+      "wir können nicht alle Probleme dieser Welt lösen",
       html`
       <p>Unsere Ressourcen sind beschränkt und wir können nicht alle Probleme gleichzeitig lösen. Vegan zu leben ist jedoch
       passiv und sehr einfach. Wir müssen dafür weder unsere Jobs kündigen, noch unser Geld spenden, noch unsere Freizeit
@@ -616,7 +719,7 @@
       `
     ),
   ];
-  
+
   function JustificationComponent (props) {
     return html`
     <li><h2>Ja, aber ${props.justification.claim}</h2>
@@ -625,7 +728,7 @@
     `;
   }
 
-  
+
   function App (props) {
     return html`
     <h1>Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition</h1>
