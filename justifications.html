@@ -1,96 +1,20 @@
 <html lang="de">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet"/>
+
   <title>Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition</title>
 
-  <style type="text/css">
-    html,
-    body {
-      background-image: none;
-      background-color: #22272E;
-      font-family: sans-serif;
-    }
-
-    body * {
-      color: #adbac7;
-      background-color: #22272E;
-    }
-
-    a,
-    a * {
-      color: rgba(80, 250, 123, 1);
-      background-color: transparent;
-    }
-
-    a:hover,
-    a:hover *,
-    a:visited:hover,
-    a:visited:hover *,
-    span[onclick]:hover,
-    div[onclick]:hover,
-    [role="link"]:hover,
-    [role="link"]:hover *,
-    [role="button"]:hover *,
-    [role="menuitem"]:hover,
-    [role="menuitem"]:hover *,
-    .link:hover,
-    .link:hover * {
-      color: rgba(241, 250, 140, 1);
-    }
-
-    a:visited,
-    a:visited * {
-      color: rgba(98, 114, 164, 1);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    [id*="headline"],
-    [class*="headline"],
-    [id*="header"],
-    [class*="header"],
-    [class*="header"] td {
-      color: #adbac7;
-    }
-
-    [id*="overlay"],
-    [id*="lightbox"],
-    blockquote {
-      background-color: rgba(68, 71, 90, 1);
-    }
-
-    textarea {
-      background: rgba(68, 71, 90, 1);
-    }
-
-    div,
-    ul,
-    li {
-      background-image: none;
-    }
-
-    a.highlight,
-    a.highlight *,
-    a.active,
-    a.active *,
-    .selected,
-    .selected *,
-    [href="#"] {
-      font-weight: bold;
-      color: rgba(139, 233, 253, 1);
-    }
-
-  </style>
   <script type="module">
     import {html, render} from 'https://unpkg.com/htm/preact/index.mjs?module'
 
     class Justification {
-      constructor(claim, refutation) {
+      constructor(id, claim, refutation) {
+        this.id = id;
         this.claim = claim;
         this.refutation = refutation;
       }
@@ -98,6 +22,7 @@
 
     const justifications = [
       new Justification(
+        "töten",
         "Tiere zu töten verursacht kein Leid",
         html`<p>
         Der Duden definiert Leid als <q>Unrecht, Böses, das jemandem zugefügt wird</q>. Selbst wenn es einem Tier
@@ -107,6 +32,7 @@
         </p>`
       ),
       new Justification(
+        "eier",
         "Hühnern die Eier wegzunehmen verursacht kein Leid",
         html`<p>
         In der Eierindustrie werden fast nur Weibchen benötigt, denn Männchen legen keine Eier. Daher werden Männchen
@@ -118,6 +44,7 @@
         </p>`
       ),
       new Justification(
+        "milch",
         "Kühen die Milch wegzunehmen verursacht kein Leid",
         html`<p>
         In der Milchindustrie werden fast nur Weibchen benötigt, denn Männchen geben keine Milch. Wie alle Säugetiere
@@ -132,6 +59,7 @@
         </p>`
       ),
       new Justification(
+        "melken",
         "Kühe müssen gemolken werden",
         html`<p>
         Wie alle Säugetiere geben Kühe nur Milch, um Ihre Jungen zu nähren. Es ist ein weit verbreiteter Irrglaube, dass
@@ -142,6 +70,7 @@
         </p>`
       ),
       new Justification(
+        "scheren",
         "Schafe zu scheren verursacht kein Leid",
         html`<p>
         Je mehr Wolle ein Schaf produziert, desto profitabler. Merinoschafe sind deshalb speziell darauf gezüchtet, eine
@@ -157,6 +86,7 @@
         </p>`
       ),
       new Justification(
+        "seide",
         "Raupen die Seide zu nehmen verursacht kein Leid",
         html`<p>
         Seide wird vom Kokon einer Seidenraupe gewonnen. Die Seidenraupe produziert mit Hilfe spezieller Drüsen in ihrem
@@ -168,6 +98,7 @@
         </p>`
       ),
       new Justification(
+        "honig",
         "Bienen den Honig zu nehmen verursacht kein Leid",
         html`<p>
         Honig wird von Bienen produziert und als Nahrung gelagert. Es ist die einzige Nahrung, die sie lagern, während
@@ -184,6 +115,7 @@
         </p>`
       ),
       new Justification(
+        "geschmack",
         "ich mag nun mal den Geschmack",
         html`<p>
         Was hat mehr Wert, unsere persönliche Geschmacksvorliebe oder das Leben eines Tieres? Reicht es als
@@ -193,6 +125,7 @@
         </p>`
       ),
       new Justification(
+        "entscheidung",
         "es ist meine persönliche Entscheidung",
         html`<p>
         Jede Entscheidung, die wir treffen, ist eine persönliche Entscheidung. Wäre <quote>es ist meine persönliche
@@ -204,6 +137,7 @@
         </p>`
       ),
       new Justification(
+        "subjektiv",
         "Moral ist subjektiv",
         html`<p>
         Die Ansicht davon, was richtig und was falsch ist, unterscheidet sich von Kultur zu Kultur und von Mensch zu
@@ -213,7 +147,8 @@
         </p>`
       ),
       new Justification(
-        "das ist nunmal unsere Kultur",
+        "kultur",
+        "das ist nun mal unsere Kultur",
         html`<p>
         Kulturen verändern sich über die Zeit. Versklavung und die Unterdrückung von Frauen waren einst Gesellschaftlich
         akzeptiert, dennoch waren diese Dinge unmoralisch. Nur weil es in gewissen Kulturen üblich ist, Hunde zu töten
@@ -222,6 +157,7 @@
         </p>`
       ),
       new Justification(
+        "vorfahren",
         "schon unsere Vorfahren haben dies getan",
         html`<p>
         Unserer Vorfahren haben auch auf Bäumen gelebt, keine Kleidung getragen, in Büsche gekotet, vergewaltigt, getötet,
@@ -232,6 +168,7 @@
         </p>`
       ),
       new Justification(
+        "eckzähne",
         "wir haben Eckzähne",
         html`<p>
         Ganz abgesehen davon, das unsere Eckzähne lächerlich klein und stumpf sind, welche Relevanz hat die Form unserer
@@ -239,10 +176,12 @@
         gibt es einige Pflanzenfresser, wie zum Beispiel das Flusspferd, die viel grössere Eckzähne haben als wir.
         Andererseits haben unsere Eckzähne keinerlei Ähnlichkeit mit denen wahrer Fleisch- oder Allesesser wie
         beispielsweise Hunde. Hingegen haben unsere Kauflächen sehr viel Ähnlichkeit mit denen vom Pflanzenfressern,
-        wie Kühe oder Pferde. Selbst wenn nicht, würde dies nicht das töten von Tieren moralisch rechtfertigen.
+        wie Kühe oder Pferde. Selbst wenn nicht, würde dies nicht das töten von Tieren moralisch rechtfertigen. Wir
+        haben auch Füsse, das bedeutet aber nicht, dass wir andere damit treten müssen.
         </p>`
       ),
       new Justification(
+        "löwen",
         "Löwen töten und essen auch Tiere",
         html`<p>
         Löwen sind obligatorische Fleischesser. Anders als wir essen sie Tiere um zu überleben. Wir sind jedoch weder
@@ -253,6 +192,7 @@
         </p>`
       ),
       new Justification(
+        "kreislauf",
         "das ist der Kreislauf des Lebens",
         html`<p>
         Alles was geboren wird, muss irgendwann sterben. Ist es daher moralisch gerechtfertigt, das Leben eines
@@ -262,6 +202,7 @@
         </p>`
       ),
       new Justification(
+        "natürlich-fleisch",
         "Fleisch zu essen ist natürlich",
         html`<p>
         Der Mensch ist in vielerlei Hinsicht kein Fleischesser. Der Anblick von toten Tieren, Blut und Eingeweiden
@@ -274,6 +215,7 @@
         </p>`
       ),
       new Justification(
+        "natürlich-milch",
         "Milch zu trinken ist natürlich",
         html`<p>
         Ja, die Milch unserer eigenen Mutter. So lange bis wir abgestillt sind. Die Milch einer Mutter einer anderen
@@ -282,6 +224,7 @@
         </p>`
       ),
       new Justification(
+        "schon-immer",
         "wir haben es schon immer getan",
         html`<p>
         Mit dieser Einstellung würde die Gesellschaft immer so bleiben, wie sie ist, und sich nie weiterentwickeln.
@@ -291,6 +234,7 @@
         </p>`
       ),
       new Justification(
+        "überleben",
         "wir müssen tierische Produkte essen, um zu überleben",
         html`<p>
         Das dies nicht stimmt beweisen nur schon die schätzungsweise 80 Millionen Veganern auf der Welt. Donald Watson,
@@ -298,6 +242,7 @@
         </p>`
       ),
       new Justification(
+        "zweck",
         "Tiere wurden für diesen Zweck gezüchtet",
         html`<p>
         Dieser Logik folgend wäre es in Ordnung alles Beliebige mit einem Lebewesen zu tun - zum Beispiel es zu foltern
@@ -305,6 +250,7 @@
         </p>`
       ),
       new Justification(
+        "dankbar",
         "ohne uns würden sie gar nicht leben, sie sollten uns dankbar sein",
         html`<p>
         Nur weil wir verantwortlich dafür sind, dass ein Leben in die Welt gebracht wurde, bedeutet dies nicht, dass wir
@@ -319,6 +265,7 @@
       `
       ),
       new Justification(
+        "zugang",
         "manche Menschen haben keinen Zugang zu pflanzlichen Produkten",
         html`<p>
         Wenn Menschen tierische Produkte essen um zu überleben, dann ist das ihre einzige Option. Für jeden, der nicht in
@@ -326,6 +273,7 @@
         </p>`
       ),
       new Justification(
+        "insel",
         "was wäre, wenn du auf einer einsamen Insel gestrandet bist und nur Tiere essen könntest",
         html`<p>
         Wenn man sich in einer Situation befindet in der man stirbt, wenn man keine tierischen Produkte konsumiert, dann
@@ -333,6 +281,7 @@
         </p>`
       ),
       new Justification(
+        "intelligenz",
         "Tiere sind nicht so intelligent wie wir",
         html`
         <p>Zu denken, dass Intelligenz den Wert eines Lebens definiert, verursacht viele Probleme. Einerseits ist es sehr
@@ -345,6 +294,7 @@
       `
       ),
       new Justification(
+        "schmerz-pflanzen",
         "Pflanzen empfinden auch Schmerzen, daher ist es egal ob man Tiere oder Pflanzen tötet",
         html`
         <p>Reize werden über Nervenbahnen an das Gehirn geleitet und von diesem als Schmerz interpretiert. Pflanzen
@@ -363,6 +313,7 @@
         `
       ),
       new Justification(
+        "dazu-da",
         "manche Tiere sind dazu da, getötet zu werden",
         html`
         <p>Diese Einordnung ist nicht naturgegeben, sondern eine subjektive und oft willkürliche Wahrnehmung der Menschen.
@@ -373,6 +324,7 @@
         `
       ),
       new Justification(
+        "lokaler-bauer",
         "ich kaufe meine Lebensmittel beim Bauern aus dem Dorf",
         html`
         <p>Welchen Unterschied macht dies? Eliminiert die Tatsache, dass der Bauer nicht weit entfernt ist, automatisch
@@ -400,6 +352,7 @@
         `
       ),
       new Justification(
+        "schmerzfrei",
         "Tiere spüren nichts, wenn sie getötet werden",
         html`
         <p>Die standardmässige, gesetzlich zugelassene Form der Schlachtung ist, Tiere zunächst zu "betäuben" und ihnen
@@ -418,6 +371,7 @@
         `
       ),
       new Justification(
+        "grund",
         "Töten ist nur falsch, wenn es grundlos ist",
         html`
         <p>Für die wenigsten Menschen ist das Ausbeuten und Töten von Tieren eine Notwendigkeit. Wenn es keine
@@ -431,6 +385,7 @@
         `
       ),
       new Justification(
+        "welt-vegan",
         "die Welt wird nie 100% vegan sein",
         html`
         <p>Das stimmt. Sie wird vermutlich auch nie frei von Gewalt, Rassismus, Sklaverei, Homophobie oder Sexismus sein.
@@ -439,6 +394,7 @@
         `
       ),
       new Justification(
+        "einzelner",
         "ein Einzelner ändert sowieso nichts",
         html`
         <p>Jeder ist für seine eigenen Taten verantwortlich. Nur weil andere Schlechtes tun, ist dies kein Grund dafür
@@ -447,6 +403,7 @@
       `
       ),
       new Justification(
+        "unperfekt",
         "100% vegan geht sowieso nicht",
         html`
         <p>Versuchst du, andere Menschen nicht zu verletzen? Wieso, wenn du es sowieso nie schaffen wirst, niemanden zu
@@ -460,13 +417,15 @@
       `
       ),
       new Justification(
+        "überpopulation",
         "wenn jeder vegan wäre, gäbe es zu viele Tiere",
         html`
-        <p>Sogenannte "Nutztiere" werden von uns nur gezüchtet, damit wir von ihnen profitieren können. Je mehr Menschen
-        vegan werden, desto weniger Tiere werden gezüchtet. Es gäbe nie zu viele Tiere.</p>
+        <p>Sogenannte "Nutztiere" existieren nur, weil wir sie ins Leben gezüchtet haben. Je mehr Menschen vegan werden,
+        desto weniger Tiere werden gezüchtet. Es gäbe nie zu viele Tiere.</p>
       `
       ),
       new Justification(
+        "aussterben",
         "wenn jeder vegan wäre, würden Nutztiere aussterben",
         html`
         <p>Sogenannte Nutztiere wurden von Menschen über viele Jahre selektiv gezüchtet, um aus ihnen möglichst hohen
@@ -480,6 +439,7 @@
       `
       ),
       new Justification(
+        "natur-sterben",
         "in der Natur würden die Tiere auf viel brutalere Weise sterben",
         html`
         <p>Zunächst ist dieses Argument für alle Tiere, die wir züchten und in Gefangenschaft aufziehen, völlig
@@ -495,6 +455,7 @@
       `
       ),
       new Justification(
+        "jobverlust",
         "die Bauern würden sonst ihren Job verlieren",
         html`
         <p>Wie absurd dieses Argument ist, zeigt sich, wenn man es auf andere Bereiche anwendet: Wenn man nicht raucht,
@@ -507,6 +468,7 @@
       `
       ),
       new Justification(
+        "nachhaltig",
         "vegan zu sein ist nicht Nachhaltig",
         html`
         <p>Weltweit werden jedes Jahr schätzungsweise 77 Milliarden Landtiere für Nahrung geschlachtet. Um diese zu
@@ -518,6 +480,7 @@
       `
       ),
       new Justification(
+        "ungesund",
         "vegan zu sein ist ungesund",
         html`
         <p>Worauf basiert diese Behauptung? Bestimmt nicht auf den Aussagen der <i>American Dietetic Association</i>
@@ -529,6 +492,7 @@
       `
       ),
       new Justification(
+        "protein",
         "pflanzliche Produkte liefern zu wenig Protein",
         html`
         <p>Wer dies denkt, sollte sich unbedingt informieren. Mandeln, Tempeh, Chia Samen, Linsen, Erbsen, Kürbiskerne,
@@ -539,6 +503,7 @@
       `
       ),
       new Justification(
+        "eisen",
         "pflanzliche Produkte liefern zu wenig Eisen",
         html`
         <p>Wer dies denkt, sollte sich unbedingt informieren. Tiere produzieren kein Eisen, sondern nehmen dieses über
@@ -546,6 +511,7 @@
       `
       ),
       new Justification(
+        "kalzium",
         "pflanzliche Produkte liefern zu wenig Kalzium",
         html`
         <p>Wer dies denkt, sollte sich unbedingt informieren. Auch Kalzium kann in ausreichenden Mengen über pflanzliche
@@ -557,6 +523,7 @@
       `
       ),
       new Justification(
+        "b12",
         "Vitamin B12 ist nur in tierischen Lebensmitteln enthalten",
         html`
         <p>Vitamin B12 wird von Mikroorganismen wie Bakterien produziert.</p>
@@ -579,6 +546,7 @@
       `
       ),
       new Justification(
+        "teuer",
         "vegan zu sein ist teuer",
         html`
         <p>Zu den teuersten tierischen Produkten gehören Kobe-Rindfleisch, Blauflossen-Thunfisch und Kaviar, zu den
@@ -592,6 +560,7 @@
       `
       ),
       new Justification(
+        "unappetitlich",
         "veganes Essen schmeckt nicht",
         html`
         <p>Selbst nicht-Veganer essen sehr viele vegane Produkte. Brot, Pasta, Reis, Kornflakes, Suppen, Kekse,
@@ -601,6 +570,7 @@
       `
       ),
       new Justification(
+        "ernte",
         "bei der Ernte von Getreide sterben viel mehr Tiere",
         html`
         <p>Um ein Tier bis zur Schlachtung durchzufüttern benötigt es viel mehr Getreide, als wenn wir dieses Getreide
@@ -615,6 +585,7 @@
       `
       ),
       new Justification(
+        "leben-lassen",
         "könnt ihr Veganer nicht einfach Leben und Leben lassen?",
         html`
         <p>Zu jemandem, der niemanden töten will, zu sagen "leben und leben lassen" während man das Töten anderer in
@@ -622,6 +593,7 @@
       `
       ),
       new Justification(
+        "aufzwingen",
         "hört auf, anderen eure Meinung aufzuzwingen",
         html`
         <p>Die wenigsten Veganern versuchen, anderen ihre Meinung <i>aufzuzwingen</i>. Sie versuchen lediglich, Menschen
@@ -635,6 +607,7 @@
       `
       ),
       new Justification(
+        "engstirnig",
         "Veganer sind engstirnig",
         html`
         <p>Kaum jemand wurde als Veganer aufgezogen. Nahezu jeder wurde mit der gleichen Unwissenheit oder Ignoranz
@@ -645,6 +618,7 @@
         hätten sie dies nie getan.</p> `
       ),
       new Justification(
+        "baby",
         "ich habe von einer veganen Familie gehört, deren Baby starb",
         html`
         <p>Dieses Baby starb an Unterernährung. Veganismus hat mit Unterernährung nichts zu tun. Nur weil eine vegane
@@ -654,6 +628,7 @@
       `
       ),
       new Justification(
+        "auto",
         "beim Autofahren sterben auch Tiere",
         html`
         <p>Sterben Insekten, weil sie gegen die Windschutzscheibe knallen, oder wird versehentlich ein Igel überfahren,
@@ -664,6 +639,7 @@
       `
       ),
       new Justification(
+        "medikamente",
         "Medikamente sind auch nicht vegan",
         html`
         <p>Zum einen gibt es durchaus wirksame Medikamente, die vegan sind. Zum anderen ist manchmal unmöglich an völlig
@@ -686,6 +662,7 @@
       `
       ),
       new Justification(
+        "nihilist",
         "ich bin Nihilist, mir ist alles egal ausser ich selbst",
         html`
         <p>Das ist höchst unwahrscheinlich. Aber selbst wenn es so wäre, eine pflanzenbasierte Ernährung hat viele
@@ -696,6 +673,7 @@
       `
       ),
       new Justification(
+        "haustiere",
         "unsere Haustiere benötigen Fleisch",
         html`
         <p>Was man seinem Haustier zu essen gibt hat nichts damit zu tun, was man selbst konsumiert.</p>
@@ -715,6 +693,7 @@
       `
       ),
       new Justification(
+        "kriege",
         "es gibt Kriege auf der Welt und Menschen verhungern",
         html`
         <p>Das ist schrecklich. Der Grund dafür ist aber nicht, dass wir zu wenig tierische Produkte konsumieren. Daher
@@ -725,6 +704,7 @@
       `
       ),
       new Justification(
+        "handys",
         "für Handys arbeiten Kinder in Kobalt-Minen",
         html`
         <p>Der Kauf tierischer Produkte hilft nicht, diese Situation zu verbessern. Nur weil wir Leid an einem Ort
@@ -733,6 +713,7 @@
       `
       ),
       new Justification(
+        "grössere-probleme",
         "wir Menschen haben grössere Probleme",
         html`
         <p>Ignorieren wir für einen Moment, dass der Konsum tierischer Produkte massive negative Folgen für die heutige
@@ -751,6 +732,7 @@
       `
       ),
       new Justification(
+        "alle-probleme",
         "wir können nicht alle Probleme dieser Welt lösen",
         html`
         <p>Unsere Ressourcen sind beschränkt und wir können nicht alle Probleme gleichzeitig lösen. Vegan zu leben ist
@@ -766,27 +748,56 @@
       ),
     ];
 
+    String.prototype.capitalize = function() {
+      return this.charAt(0).toUpperCase() + this.slice(1)
+    }
+
     function JustificationComponent(props) {
       return html`
-      <li><h2>Ja, aber ${props.justification.claim}</h2>
+      <div class="text-justify card">
+      <h2 id="${props.justification.id}" class="card-title font-size-16">
+        ${props.nr} Ja, aber ${props.justification.claim} <a href="#${props.justification.id}">#</a>
+      </h2>
       ${props.justification.refutation}
-      </li>
+      </div>
     `;
     }
 
+    function NavigationComponent(props) {
+      return html`
+      <div class="card">
+        <ol>
+        ${props.justifications.map(justification => html`
+          <li><a href="#${justification.id}">Ja, aber ${justification.claim}</a></li>
+        `)}
+        </ol>
+      </div>
+      `;
+    }
 
     function App(props) {
       return html`
-    <h1>Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition</h1>
-    <ol>
-    ${props.justifications.map((justification, index) => html`<${JustificationComponent} key="${index}" justification="${justification}" />`)}
-    </ol>
-    `;
+      <div class="page-wrapper">
+        <div class="content-wrapper">
+          <div class="container-fluid">
+            <div class="content">
+              <h1 class="content-title">Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition 🇨🇭 😀</h1>
+            </div>
+            <${NavigationComponent} justifications="${justifications}" />
+            ${props.justifications.map((justification, index) => html`<${JustificationComponent} key="${index}" nr="${index + 1}" justification="${justification}" />`)}
+          </div>
+        </div>
+      </div>
+      `;
     }
 
-    render(html`<${App} justifications="${justifications}" />`, document.body);
+    render(html`<${App} justifications="${justifications}" />`, document.getElementById('root'));
+    halfmoon.toggleDarkMode()
   </script>
 </head>
 <body>
+
+<div id="root"></div>
+<script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
 </body>
 </html>
