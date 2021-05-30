@@ -1,89 +1,88 @@
 <style type="text/css">
-    html,
-    body {
-        background-image: none;
-        background-color: #22272E;
-        font-family: sans-serif;
-    }
+  html,
+  body {
+    background-image: none;
+    background-color: #22272E;
+    font-family: sans-serif;
+  }
 
-    body * {
-        color: #adbac7;
-        background-color: #22272E;
-    }
+  body * {
+    color: #adbac7;
+    background-color: #22272E;
+  }
 
-    a,
-    a * {
-        color: rgba(80, 250, 123, 1);
-        background-color: transparent;
-    }
+  a,
+  a * {
+    color: rgba(80, 250, 123, 1);
+    background-color: transparent;
+  }
 
-    a:hover,
-    a:hover *,
-    a:visited:hover,
-    a:visited:hover *,
-    span[onclick]:hover,
-    div[onclick]:hover,
-    [role="link"]:hover,
-    [role="link"]:hover *,
-    [role="button"]:hover *,
-    [role="menuitem"]:hover,
-    [role="menuitem"]:hover *,
-    .link:hover,
-    .link:hover * {
-        color: rgba(241, 250, 140, 1);
-    }
+  a:hover,
+  a:hover *,
+  a:visited:hover,
+  a:visited:hover *,
+  span[onclick]:hover,
+  div[onclick]:hover,
+  [role="link"]:hover,
+  [role="link"]:hover *,
+  [role="button"]:hover *,
+  [role="menuitem"]:hover,
+  [role="menuitem"]:hover *,
+  .link:hover,
+  .link:hover * {
+    color: rgba(241, 250, 140, 1);
+  }
 
-    a:visited,
-    a:visited * {
-        color: rgba(98, 114, 164, 1);
-    }
+  a:visited,
+  a:visited * {
+    color: rgba(98, 114, 164, 1);
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    [id*="headline"],
-    [class*="headline"],
-    [id*="header"],
-    [class*="header"],
-    [class*="header"] td {
-        color: #adbac7;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  [id*="headline"],
+  [class*="headline"],
+  [id*="header"],
+  [class*="header"],
+  [class*="header"] td {
+    color: #adbac7;
+  }
 
-    [id*="overlay"],
-    [id*="lightbox"],
-    blockquote {
-        background-color: rgba(68, 71, 90, 1);
-    }
+  [id*="overlay"],
+  [id*="lightbox"],
+  blockquote {
+    background-color: rgba(68, 71, 90, 1);
+  }
 
-    textarea {
-        background: rgba(68, 71, 90, 1);
-    }
+  textarea {
+    background: rgba(68, 71, 90, 1);
+  }
 
-    div,
-    ul,
-    li {
-        background-image: none;
-    }
+  div,
+  ul,
+  li {
+    background-image: none;
+  }
 
-    a.highlight,
-    a.highlight *,
-    a.active,
-    a.active *,
-    .selected,
-    .selected *,
-    [href="#"] {
-        font-weight: bold;
-        color: rgba(139, 233, 253, 1);
-    }
+  a.highlight,
+  a.highlight *,
+  a.active,
+  a.active *,
+  .selected,
+  .selected *,
+  [href="#"] {
+    font-weight: bold;
+    color: rgba(139, 233, 253, 1);
+  }
 
 </style>
 <script type="module">
-  import { h, Component } from 'https://unpkg.com/preact?module';
-  import { html, render } from 'https://unpkg.com/htm/preact/index.mjs?module'
+  import {html, render} from 'https://unpkg.com/htm/preact/index.mjs?module'
 
   class Justification {
     constructor(claim, refutation) {
@@ -679,15 +678,15 @@
       zu verschwenden.</p>
       `
     ),
-      new Justification(
+    new Justification(
       "für Handys arbeiten Kinder in Kobalt-Minen",
       html`
       <p>Der Kauf tierischer Produkte hilft nicht, diese Situation zu verbessern. Nur weil wir Leid an einem Ort
       verursachen, bedeutet dies nicht, dass wir Leid auch an einem anderen Ort verursachen müssen. Das sind zwei völlig
       getrennte Probleme.</p>
       `
-      ),
-      new Justification(
+    ),
+    new Justification(
       "wir Menschen haben grössere Probleme",
       html`
       <p>Ignorieren wir für einen Moment, dass der Konsum tierischer Produkte massive negative Folgen für die heutige
@@ -704,7 +703,7 @@
       Menschen. Ihnen unnötig Leid zuzufügen mit der Rechtfertigung "wir Menschen haben grössere Probleme" ist alles
       andere als intelligent und mitfühlend.</p>
       `
-      ),
+    ),
     new Justification(
       "wir können nicht alle Probleme dieser Welt lösen",
       html`
@@ -720,7 +719,7 @@
     ),
   ];
 
-  function JustificationComponent (props) {
+  function JustificationComponent(props) {
     return html`
     <li><h2>Ja, aber ${props.justification.claim}</h2>
     <p>${props.justification.refutation}</p>
@@ -729,7 +728,7 @@
   }
 
 
-  function App (props) {
+  function App(props) {
     return html`
     <h1>Rechtfertigungen für die Ausbeutung und Tötung von Tieren - Schweizer Edition</h1>
     <ol>
