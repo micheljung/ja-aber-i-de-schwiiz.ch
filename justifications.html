@@ -13,10 +13,11 @@
     import {html, render} from 'https://unpkg.com/htm/preact/index.mjs?module'
 
     class Justification {
-      constructor(id, claim, refutation) {
+      constructor(id, claim, shortRefutation, longRefutation) {
         this.id = id;
         this.claim = claim;
-        this.refutation = refutation;
+        this.shortRefutation = shortRefutation;
+        this.longRefutation = longRefutation;
       }
     }
 
@@ -24,16 +25,18 @@
       new Justification(
         "töten",
         "Tiere zu töten verursacht kein Leid",
+        "Töten ist Leid.",
         html`<p>
         Der Duden definiert Leid als <q>Unrecht, Böses, das jemandem zugefügt wird</q>. Selbst wenn es einem Tier
-        keinen Schmerz verursachen würde, wenn wir ihm mit einem Bolzenschussgerät in den Kopf schiessen, Strom durch
-        das Gehirn fliessen lassen oder mit Gas ersticken, und anschliessend die Kehle durchschneiden und es verbluten
-        lassen, so ist dies ohne Zweifel böses Unrecht, das wir jemandem zufügen.
+        keinen Schmerz verursachen würde, wenn wir ihm mit einem Bolzenschussgerät in den Kopf schiessen, ihm Strom
+        durch das Gehirn fliessen lassen oder es mit Gas ersticken, ihm anschliessend die Kehle durchschneiden
+        und verbluten lassen, so ist dies ohne Zweifel böses Unrecht, das wir jemandem zufügen.
         </p>`
       ),
       new Justification(
         "eier",
         "Hühnern die Eier wegzunehmen verursacht kein Leid",
+        "Hennen sind qualgezüchtet, männliche Küken nutzlos, beide werden letztendlich getötet.",
         html`<p>
         In der Eierindustrie werden fast nur Weibchen benötigt, denn Männchen legen keine Eier. Daher werden Männchen
         direkt nach dem Schlüpfen aussortiert und getötet, da sie keinem Zweck dienen. Hierfür werden sie entweder zu
@@ -46,6 +49,7 @@
       new Justification(
         "milch",
         "Kühen die Milch wegzunehmen verursacht kein Leid",
+        "Kühe sind qualgezüchtet, männliche Kälber nutzlos, beide werden letztendlich getötet.",
         html`<p>
         In der Milchindustrie werden fast nur Weibchen benötigt, denn Männchen geben keine Milch. Wie alle Säugetiere
         geben Kühe nur Milch, um Ihre Jungen zu nähren. Es ist ein weit verbreiteter Irrglaube, dass sie andauernd Milch
@@ -61,6 +65,7 @@
       new Justification(
         "melken",
         "Kühe müssen gemolken werden",
+        "Kühe müssen von Natur aus nicht von Menschen gemolken werden.",
         html`<p>
         Wie alle Säugetiere geben Kühe nur Milch, um Ihre Jungen zu nähren. Es ist ein weit verbreiteter Irrglaube, dass
         sie andauernd Milch produzieren. Würden wir Kühe nicht schwängern, würden sie keine Milch geben. Würden wir sie
@@ -72,6 +77,7 @@
       new Justification(
         "scheren",
         "Schafe zu scheren verursacht kein Leid",
+        "Schafe werden qualgezüchtet, grob behandelt und letztendlich getötet.",
         html`<p>
         Je mehr Wolle ein Schaf produziert, desto profitabler. Merinoschafe sind deshalb speziell darauf gezüchtet, eine
         extrem faltige Haut zu haben, um möglichst viel Wolle zu produzieren. Unter den Hautfalten sammeln sich dann
@@ -88,6 +94,7 @@
       new Justification(
         "seide",
         "Raupen die Seide zu nehmen verursacht kein Leid",
+        "Raupen werden lebendig zu Tode gekocht.",
         html`<p>
         Seide wird vom Kokon einer Seidenraupe gewonnen. Die Seidenraupe produziert mit Hilfe spezieller Drüsen in ihrem
         Maul einen feinen Faden, den sie in einer grossen Schlaufe und hunderttausenden von Windungen um sich herum
@@ -100,6 +107,7 @@
       new Justification(
         "honig",
         "Bienen den Honig zu nehmen verursacht kein Leid",
+        "Honig ist wichtige Nahrung für Bienen. Bienen werden verstümmelt, zerquetscht und getötet.",
         html`<p>
         Honig wird von Bienen produziert und als Nahrung gelagert. Es ist die einzige Nahrung, die sie lagern, während
         wir Menschen keineswegs darauf angewiesen sind. Trotzdem stehlen wir ihren Honig und ersetzen ihn durch billigen
@@ -117,6 +125,7 @@
       new Justification(
         "geschmack",
         "ich mag nun mal den Geschmack",
+        "Geschmack ist keine Rechtfertigung um zu töten.",
         html`<p>
         Was hat mehr Wert, unsere persönliche Geschmacksvorliebe oder das Leben eines Tieres? Reicht es als
         Rechtfertigung aus, etwas gerne zu tun? Wenn ja, so müsste es auch in Ordnung sein jemanden zu vergewaltigen,
@@ -127,18 +136,22 @@
       new Justification(
         "entscheidung",
         "es ist meine persönliche Entscheidung",
+        "Entscheidung ist keine Rechtfertigung um jemanden zu töten.",
         html`<p>
         Jede Entscheidung, die wir treffen, ist eine persönliche Entscheidung. Wäre <q>es ist meine persönliche
-        Entscheidung</q> eine moralische Rechtfertigung, dürften wir uns alles erlauben, da alles, was wir tun,
-        eine persönliche Entscheidung ist? Natürlich nicht, denn manche Entscheidungen haben ein Opfer, die mit dieser
-        Entscheidung nicht einverstanden ist. Wir können nicht mit "persönliche Entscheidung" argumentieren und
-        gleichzeitig die persönliche Entscheidung anderer ignorieren - etwa die persönliche Entscheidung eines Tieres,
-        nicht von uns ausgebeutet, getötet und gegessen zu werden. Kein Tier begibt sich freiwillig ins Schlachthaus.
-        </p>`
+        Entscheidung</q> eine moralische Rechtfertigung, so dürften wir uns alles erlauben, da alles, was wir tun,
+        eine persönliche Entscheidung ist. Jedoch haben manche Entscheidungen ein Opfer, das mit dieser
+        Entscheidung nicht einverstanden ist.</p>
+        <p>Ausserdem können können wir nicht mit "persönliche Entscheidung" argumentieren und
+        gleichzeitig die persönliche Entscheidung anderer ignorieren - etwa die persönliche Entscheidung eines Kalbes,
+        bei seiner Mutter zu bleiben. Oder die eines Schweins, nicht in einer Gaskammer erstickt werden zu wollen.
+        Oder die eines Kükens, nicht am Tag seiner Geburt getötet zu werden.</p>
+        `
       ),
       new Justification(
         "subjektiv",
         "Moral ist subjektiv",
+        "Moral muss aus der Sicht des Opfers beurteilt werden.",
         html`<p>
         Die Ansicht davon, was richtig und was falsch ist, unterscheidet sich von Kultur zu Kultur und von Mensch zu
         Mensch. Dies rechtfertigt jedoch nicht jedes beliebige Verhalten. Wäre es in Ordnung, ein Kind ins Gesicht zu
@@ -149,6 +162,7 @@
       new Justification(
         "kultur",
         "das ist nun mal unsere Kultur",
+        "Kultur sagt nichts darüber aus, ob etwas moralisch ist.",
         html`<p>
         Kulturen verändern sich über die Zeit. Versklavung und die Unterdrückung von Frauen waren einst Gesellschaftlich
         akzeptiert, dennoch waren diese Dinge unmoralisch. Nur weil es in gewissen Kulturen üblich ist, Hunde zu töten
@@ -159,6 +173,7 @@
       new Justification(
         "vorfahren",
         "schon unsere Vorfahren haben dies getan",
+        "Die Taten unserer Vorfahren sagen nichts darüber aus, ob etwas moralisch ist.",
         html`<p>
         Unserer Vorfahren haben auch auf Bäumen gelebt, keine Kleidung getragen, in Büsche gekotet, vergewaltigt, getötet,
         Kriege geführt, Menschen versklavt, Massaker veranstaltet oder Frauen unterdrückt, trotzdem rechtfertigen diese
@@ -170,6 +185,7 @@
       new Justification(
         "eckzähne",
         "wir haben Eckzähne",
+        "Die Form unserer Zähne ist keine Rechtfertigung dafür, andere zu töten.",
         html`<p>
         Ganz abgesehen davon, das unsere Eckzähne lächerlich klein und stumpf sind, welche Relevanz hat die Form unserer
         Zähne für die Art und Weise, wie wir Tiere behandeln? Und was sagen unsere Eckzähne überhaupt aus? Einerseits
@@ -183,6 +199,7 @@
       new Justification(
         "löwen",
         "Löwen töten und essen auch Tiere",
+        "Löwen sind keine Vorbilder eine moderne Gesellschaft.",
         html`<p>
         Löwen sind obligatorische Fleischesser. Anders als wir essen sie Tiere um zu überleben. Wir sind jedoch weder
         obligatorische Fleischesser sind, noch kämpfen wird in der Wildnis um unser Überleben. Löwen üben noch viele
@@ -193,26 +210,13 @@
       ),
       new Justification(
         "kreislauf",
-        "das ist der Kreislauf des Lebens",
+        "das ist der Lauf des Lebens",
+        "Ein unausweichlicher Tod rechtfertigt nicht das Ausbeuten und Töten.",
         html`<p>
         Alles was geboren wird, muss irgendwann sterben. Ist es daher moralisch gerechtfertigt, das Leben eines
         Lebewesens zu nehmen, da dieses ja sowieso irgendwann sterben würde? Falls ja, dann müsste es auch moralisch
-        sein Menschen zu töten, da diese ja sowieso irgendwann sterben, oder die Katze des Nachbarn, oder jedes
-        beliebige Lebewesen.
-        </p>`
-      ),
-      new Justification(
-        "natürlich-fleisch",
-        "Fleisch zu essen ist natürlich",
-        html`<p>
-        Der Mensch ist in vielerlei Hinsicht kein Fleischesser. Der Anblick von toten Tieren, Blut und Eingeweiden
-        verdirbt den meisten von uns den Appetit. Kaum einer tötet die Tiere selbst, dessen Körper er isst. Rohes Fleisch
-        ist für uns grundsätzlich schlecht verdaulich, weshalb wir es zerhacken und/oder kochen. Wir sind sehr wählerisch
-        bei den Körperteilen, die wir essen, und noch viel wählerischer bei den Tieren, die wir essen. Die Länge unseres
-        Darmes, die Form unserer Zähne, die Art wie wir kauen und die Zusammensetzung unserer Magensäure ist mit
-        derjenigen von Pflanzenfressern vergleichbar, nicht mit derjenigen von Fleischfressern. Fleisch zu essen ist für
-        uns also keineswegs natürlich.
-        </p>`
+        sein Menschen zu töten, da diese ja sowieso irgendwann sterben. Tiere zu Milliarden gezielt zu züchten, nur um
+        sie auszunutzen und kurz darauf wieder zu töten hat nichts mit dem <q>Lauf des Lebens</q> zu tun.</p>`
       ),
       new Justification(
         "natürlich-milch",
@@ -224,8 +228,25 @@
         </p>`
       ),
       new Justification(
+        "natürlich-fleisch",
+        "Fleisch zu essen ist natürlich",
+        "Fleisch zu essen verursacht unnötiges Leid.",
+        html`<p>
+        Der Mensch ist in vielerlei Hinsicht kein Fleischesser. Der Anblick von toten Tieren, Blut und Eingeweiden
+        verdirbt den meisten von uns den Appetit. Kaum einer tötet die Tiere selbst, dessen Körper er isst. Rohes Fleisch
+        ist für uns grundsätzlich schlecht verdaulich, weshalb wir es zerhacken und/oder kochen. Wir sind sehr wählerisch
+        bei den Körperteilen, die wir essen, und noch viel wählerischer bei den Tieren, die wir essen. Die Länge unseres
+        Darmes, die Form unserer Zähne, die Art wie wir kauen und die Zusammensetzung unserer Magensäure ist mit
+        derjenigen von Pflanzenfressern vergleichbar, nicht mit derjenigen von Fleischfressern. Fleisch zu essen ist für
+        uns also keineswegs natürlich.</p>
+        <p>Doch selbst wenn Menschen natürliche Allesesser wären, so könnten wir uns dennoch rein pflanzlich ernähren.
+        Weshalb sollten wir uns trotzdem aktiv für die leidvolle Option entscheiden? Unsere Moralvorstellung schreibt
+        uns vor, dass wir zur Verantwortung gezogen werden sollen, wenn wir unnötiges Leid verursachen.</p>`
+      ),
+      new Justification(
         "schon-immer",
         "wir haben es schon immer getan",
+        "Die Dauer, wie lange etwas getan wurde, sagt nichts über dessen Ethik aus.",
         html`<p>
         Mit dieser Einstellung würde die Gesellschaft immer so bleiben, wie sie ist, und sich nie weiterentwickeln.
         Sklaven wurden auch über hunderte Jahre gehalten und Frauen unterdrückt. Wie lange etwas getan wurde sagt nichts
@@ -236,6 +257,7 @@
       new Justification(
         "überleben",
         "wir müssen tierische Produkte essen, um zu überleben",
+        "Das ist falsch.",
         html`<p>
         Das dies nicht stimmt beweisen nur schon die schätzungsweise 80 Millionen Veganern auf der Welt. Donald Watson,
         der Erfinder des Wortes "Vegan", starb im Alter von 95 Jahren.
@@ -244,6 +266,7 @@
       new Justification(
         "zweck",
         "Tiere wurden für diesen Zweck gezüchtet",
+        "Ein Zweck heiligt nicht die Mittel.",
         html`<p>
         Dieser Logik folgend wäre es in Ordnung alles Beliebige mit einem Lebewesen zu tun - zum Beispiel es zu foltern
         und zu töten - sofern es von einem Menschen für diesen Zweck gezüchtet wurde. Das ist offensichtlich absurd.
@@ -252,50 +275,64 @@
       new Justification(
         "dankbar",
         "ohne uns würden sie gar nicht leben, sie sollten uns dankbar sein",
+        "Niemand ist dankbar für ein Leben voller Ausbeutung.",
         html`<p>
         Nur weil wir verantwortlich dafür sind, dass ein Leben in die Welt gebracht wurde, bedeutet dies nicht, dass wir
         frei darüber bestimmen können. Ansonsten müsste es jeden Eltern frei stehen, ihre Kinder beliebig zu behandeln
         oder zu töten. Wir haben die Züchtung von Tieren so weit getrieben, dass diese bereits mit Körpern geboren werden,
         die ein normales Leben nicht zulassen. Wir sperren sie ein, schwängern sie, nehmen ihre Kinder weg, stehlen ihre
         Milch, ersticken sie, töten sie und sagen, sie sollen dankbar sein? Diese Aussage ist unglaublich arrogant und
-        kann nur von jemandem benutzt werden, der ein angenehmes Leben führt. Niemand, der echtes Leiden erfahren hat,
-        würde jemals behaupten, dass man dankbar für ein Leben ausschliesslich bestehend aus Ausbeutung, Angst, Schmerz
-        und Tod sein sollte.
-        </p>
+        kann nur von jemandem benutzt werden, der ein angenehmes Leben führt. Wie dankbar wären wir selbst, wenn jemand
+        anderes am Tag unserer Geburt den Tag unserer Exekution festgelegt und unsere unsere gesamte
+        Daseinsberechtigung diejenige ist, dieser Person mit unserem Körper Profit einzufahren? Dies ist kein Leben,
+        wofür irgendjemand dankbar sein würde.</p>
       `
       ),
       new Justification(
         "zugang",
         "manche Menschen haben keinen Zugang zu pflanzlichen Produkten",
+        "Für Menschen, die Zugang haben, ist das irrelevant.",
         html`<p>
-        Wenn Menschen tierische Produkte essen um zu überleben, dann ist das ihre einzige Option. Für jeden, der nicht in
-        dieser Situation ist, ist dies völlig irrelevant.
+        Nicht jeder kann in einen Supermarkt spazieren und sich aussuchen, was er isst. Es git Menschen, die essen was
+        immer nötig ist, um zu überleben. Es ist ihre einzige Option. Für jeden, der nicht in dieser Situation ist,
+        ist dies völlig irrelevant. Tierische Produkte zu essen hilft diesen Menschen nicht - im Gegenteil. So können
+        beispielsweise einfache Fischer nicht einmal mehr Fische für sich selbst fangen, da kommerzielle
+        Industriefischereien die Meere leerräumen - für Menschen, die nicht auf Fische angewiesen sind.
         </p>`
       ),
       new Justification(
         "insel",
         "was wäre, wenn du auf einer einsamen Insel gestrandet bist und nur Tiere essen könntest",
-        html`<p>
-        Wenn man sich in einer Situation befindet in der man stirbt, wenn man keine tierischen Produkte konsumiert, dann
-        ist das die einzige Option. Zum Glück sind wir nicht in dieser Situation, daher ist das völlig irrelevant.
-        </p>`
+        "Für unseren Alltag ist diese hypothetische Situation irrelevant.",
+        html`
+        <p>Eine Tat in einer Extremsituationen ist nicht zu vergleichen mit derselben Tat unter normalen Umständen.
+        1972 stürzte ein Flugzeug in den Anden in 4000 Metern höhe ab. Um nicht zu verhungern waren die Überlebenden
+        nach wenigen Tagen dazu gezwungen, die Körper der toten Insassen zu essen. Ist Kannibalismus im Alltag daher
+        moralisch vertretbar? Natürlich nicht.</p>
+        <p>Wenn man sich in einer Situation befindet in der man stirbt, wenn man keine tierischen Produkte konsumiert,
+        dann ist das die einzige Option. Zum Glück sind wir nicht in dieser Situation (falls doch, bitte fordere Hilfe
+        anstatt das hier zu lesen), daher ist dieser Vergleich irrelevant.</p>
+        `
       ),
       new Justification(
         "intelligenz",
         "Tiere sind nicht so intelligent wie wir",
+        "Intelligenz rechtfertigt nicht das Töten anderer.",
         html`
-        <p>Zu denken, dass Intelligenz den Wert eines Lebens definiert, verursacht viele Probleme. Einerseits ist es sehr
-        subjektiv, was Intelligenz bedeutet. Ist die Zerstörung des Planeten, auf den wir alle zum Leben angewiesen
-        sind, intelligent? Andererseits würde es auch bedeuten, dass das Leben eines intelligenten Menschen mehr Wert ist,
-        als das eines weniger intelligenten Menschen oder eines Menschen mit einer Lernstörung. Schweine sind ausserdem
-        nachweislich intelligenter als Hunde - sollten wir also nicht Hunde statt Schweine essen?</p>
-        <p>Wenn wir wirklich glauben würden, dass Intelligenz den Wert des Lebens definiert, so sollten wir jedoch sowieso
+        <p>Zu denken, dass Intelligenz den Wert eines Lebens definiert, verursacht einige Probleme. Einerseits ist es sehr
+        subjektiv, was Intelligenz bedeutet. Ist die Zerstörung des Ökosystems, auf das wir alle zum Leben angewiesen
+        sind, intelligent? Andererseits würde es auch bedeuten, dass das Leben eines intelligenten Menschen mehr Wert
+        ist als das eines weniger intelligenten. Dürfte der intelligentere Mensch den anderen deswegen ausbeuten und
+        töten? Natürlich nicht.</p>
+        <p>Schweine sind ausserdem nachweislich intelligenter als Hunde - sollten wir also nicht Hunde statt Schweine
+        essen? Wenn wir wirklich glauben würden, dass Intelligenz den Wert des Lebens definiert, sollten wir sowieso
         alle vegan sein, denn die am wenigsten intelligenten Lebewesen sind Pflanzen.</p>
       `
       ),
       new Justification(
         "schmerz-pflanzen",
         "Pflanzen empfinden auch Schmerzen, daher ist es egal ob man Tiere oder Pflanzen tötet",
+        "Falsch, aber Veganer töten ohnehin weniger Pflanzen.",
         html`
         <p>Reize werden über Nervenbahnen an das Gehirn geleitet und von diesem als Schmerz interpretiert. Pflanzen
         verfügen weder über Nervenbahnen, noch über ein Gehirn. Zwar können sie auf gewisse Reize reagieren, dies ist
@@ -315,6 +352,7 @@
       new Justification(
         "dazu-da",
         "manche Tiere sind dazu da, getötet zu werden",
+        "Niemand will getötet werden.",
         html`
         <p>Diese Einordnung ist nicht naturgegeben, sondern eine subjektive und oft willkürliche Wahrnehmung der Menschen.
         Zu denken, dass manche Tiere dazu da sind, um von uns getötet zu werden, ist genauso verwerflich wie zu denken,
@@ -326,6 +364,7 @@
       new Justification(
         "lokaler-bauer",
         "ich kaufe meine Lebensmittel beim Bauern aus dem Dorf",
+        "Auch dort werden Tiere ausgebeutet und getötet.",
         html`
         <p>Welchen Unterschied macht dies? Eliminiert die Tatsache, dass der Bauer nicht weit entfernt ist, automatisch
         jegliches Tierleid? Ist das Töten eines Lebewesens moralisch unbedenklich, sobald man weiss, wo dieses lebte? Ist
@@ -354,6 +393,7 @@
       new Justification(
         "schmerzfrei",
         "Tiere spüren nichts, wenn sie getötet werden",
+        "Das Töten selbst ist unmoralisch.",
         html`
         <p>Die standardmässige, gesetzlich zugelassene Form der Schlachtung ist, Tiere zunächst zu "betäuben" und ihnen
         anschliessend die Kehle aufzuschlitzen, damit sie verbluten. Zur Betäubung wird ihnen entweder mit einem Bolzen
@@ -373,6 +413,7 @@
       new Justification(
         "grund",
         "Töten ist nur falsch, wenn es grundlos ist",
+        "Unnötiges Töten ist immer falsch.",
         html`
         <p>Für die wenigsten Menschen ist das Ausbeuten und Töten von Tieren eine Notwendigkeit. Wenn es keine
         Notwendigkeit ist, so ist es eine Wahl. Trifft man eine Wahl, so ist man moralisch für diese verantwortlich.</p>
@@ -387,29 +428,39 @@
       new Justification(
         "welt-vegan",
         "die Welt wird nie 100% vegan sein",
+        "Die Taten anderer sind irrelevant.",
         html`
         <p>Das stimmt. Sie wird vermutlich auch nie frei von Gewalt, Rassismus, Sklaverei, Homophobie oder Sexismus sein.
         Dennoch ist das keine Rechtfertigung dafür, diese Dinge ebenfalls zu praktizieren und wir sind bestrebt, sie
-         aus unserer Welt zu schaffen.</p>
+        aus unserer Welt zu schaffen.</p>
         `
       ),
       new Justification(
         "einzelner",
         "ein Einzelner ändert sowieso nichts",
+        "Ein Einzelner kann sehr viel ändern.",
         html`
-        <p>Jeder ist für seine eigenen Taten verantwortlich. Nur weil andere Schlechtes tun, ist dies kein Grund dafür
-        etwas ebenfalls zu tun - egal ob man damit etwas verändert oder nicht. Wer tatsächlich denkt, dass ein
-        Einzelner nichts verändern kann, der hat bei COVID-19 nicht aufgepasst.</p>
-      `
+        <p>Man muss nicht lange nachdenken um zu erkennen, dass dies nicht zutrifft. Amazon und Facebook begannen mit
+        einem Einzelnen. COVID-19 begann mit einem Einzelnen. Oder kennt jemand Elon Musk?</p>
+        <p>Ein durchschnittlicher Europäer konsumiert in seinem Leben ca. 1000 Tiere. Nicht darin eingerechnet sind
+        Tiere wie Milchkühe, männliche Kälber, Legehennen, männliche Küken, Bienen, Schafe und Fische (Beifang), die
+        ebenfalls ihr Leben lassen müssen. Jährlich werden schätzungsweise 3 Billionen Tiere durch Menschen
+        getötet. Selbst wenn wir von nur 2 Billionen getöteter Tiere ausgehen, so ergibt dies bei 7.8 Milliarden
+        Menschen und einer Lebenserwartung von 70 Jahren insgesamt rund 18'000 getötete Tiere pro Mensch. Ein Einzelner
+        macht bereits einen grossen Unterschied.</p>
+        <p>Doch selbst wenn man der Erste und Einzige auf der Welt wäre, der etwas tut, so ist letztendlich jeder für
+        seine eigenen Taten verantwortlich. Nur weil andere Schlechtes tun, ist dies kein Grund dafür ebenfalls
+        Schlechtes zu tun - egal ob man damit etwas verändert oder nicht.</p>
+        `
       ),
       new Justification(
         "unperfekt",
         "100% vegan geht sowieso nicht",
+        "Das rechtfertigt nicht, absichtlich zu töten.",
         html`
         <p>Versuchst du, andere Menschen nicht zu verletzen? Wieso, wenn du es sowieso nie schaffen wirst, niemanden zu
         verletzen? Wir leben in einer Welt, in der es praktisch unmöglich ist, jegliches Tierleid zu vermeiden. Dies ist
         jedoch kein Grund dafür, es gar nicht erst zu versuchen.</p>
-
         <p>Unsere alleinige Existenz verursacht Leid. Vegan zu sein bedeutet nicht naiv zu denken: <q>Ich bin perfekt,
         ich schade niemandem</q>. Es geht darum das Leid zu erkennen, das wir verursachen, und dieses zu minimieren.
         Tiere nicht absichtlich auszubeuten, ihnen den Kopf abzuschneiden und sie zu essen ist das
@@ -419,6 +470,7 @@
       new Justification(
         "überpopulation",
         "wenn jeder vegan wäre, gäbe es zu viele Tiere",
+        "Wir züchten nur so viele Tiere, wie wir benötigen.",
         html`
         <p>Sogenannte "Nutztiere" existieren nur, weil wir sie ins Leben gezüchtet haben. Je mehr Menschen vegan werden,
         desto weniger Tiere werden gezüchtet. Es gäbe nie zu viele Tiere.</p>
@@ -427,6 +479,7 @@
       new Justification(
         "aussterben",
         "wenn jeder vegan wäre, würden Nutztiere aussterben",
+        "Wir brauchen keine Nutztiere, ihre Haltung lässt tausende Spezies aussterben.",
         html`
         <p>Sogenannte Nutztiere wurden von Menschen über viele Jahre selektiv gezüchtet, um aus ihnen möglichst hohen
         Profit zu schlagen. Daher leiden diese Tiere unter vielen verschiedenen gesundheitlichen Problemen. Ihre reine
@@ -441,6 +494,7 @@
       new Justification(
         "natur-sterben",
         "in der Natur würden die Tiere auf viel brutalere Weise sterben",
+        "Das ist nicht garantiert und hat nichts mit Tierwirtschaft zu tun.",
         html`
         <p>Zunächst ist dieses Argument für alle Tiere, die wir züchten und in Gefangenschaft aufziehen, völlig
         irrelevant. Denn weder holen wir sie aus der Natur, noch würden wir sie in die Natur entlassen, wenn wir sie nicht
@@ -456,32 +510,50 @@
       ),
       new Justification(
         "jobverlust",
-        "die Bauern würden sonst ihren Job verlieren",
+        "die Bauern würden ihre Jobs verlieren",
+        "Nein, die Anfrage würde sich nur verlagern.",
         html`
         <p>Wie absurd dieses Argument ist, zeigt sich, wenn man es auf andere Bereiche anwendet: Wenn man nicht raucht,
         verlieren die Menschen in der Zigarettenindustrie ihre Jobs, daher sollten wir rauchen. Wenn wir keinen Alkohol
         trinken, verlieren die Menschen in der Alkoholindustrie ihre Jobs, daher sollten wir Alkohol trinken. Das ergibt
-        keinen Sinn. Industrien existieren, um die Bedürfnisse der Konsumenten zu erfüllen, nicht umgekehrt. Wenn jemand
-        ein Produkt anbietet, das niemand will, so ist das nicht das Problem der Konsumenten. Sinkt die Nachfrage für ein
-        Produkt, so steigt die Nachfrage für ein anderes (von einer Rezession abgesehen). Das bedeutet nicht, dass Jobs
+        keinen Sinn.</p>
+        <p>Industrien existieren, um die Bedürfnisse der Konsumenten zu erfüllen, nicht umgekehrt. Wenn jemand
+        ein Produkt anbietet, das niemand will, so ist das nicht das Problem der Konsumenten. Sinkt die Nachfrage für
+        ein Produkt, so steigt die Nachfrage für ein anderes (von einer Rezession abgesehen). Sinkt die Nachfrage nach
+        tierischen Produkten, so steigt die Nachfrage nach pflanzlichen Produkten. Das bedeutet nicht, dass Jobs
         verloren gehen.</p>
       `
       ),
       new Justification(
         "nachhaltig",
         "vegan zu sein ist nicht Nachhaltig",
+        "Falsch, Veganismus ist nachhaltiger als Karnismus und Vegetarismus.",
         html`
         <p>Weltweit werden jedes Jahr schätzungsweise 77 Milliarden Landtiere für Nahrung geschlachtet. Um diese zu
         füttern wird viel mehr Land, Wasser und Nahrung benötigt als wenn sich alle Menschen ausschliesslich von
         pflanzlichen Produkten ernähren würden. Hinzu kommen weitere, hauptsächlich durch die Tierindustrie verursachten
-        Probleme wie die Abholzung der Regenwälder, die Überfischung der Meere, der Ausstoss Treibhausgasen, Bedrohung
-        der Biodiversität, Antibiotikaresistenz, Virusmutationen, Gewässerverschmutzung, Insektensterben, Sauerstoffmangel
-        in Küstengewässern usw. Wer das nicht glaub, darf gerne selbst nachforschen.</p>
+        Probleme wie die Abholzung der Regenwälder, die Überfischung der Meere, der Ausstoss von Treibhausgasen,
+        Bedrohung der Biodiversität, Antibiotikaresistenz, Virusmutationen, Gewässerverschmutzung, Insektensterben,
+        Sauerstoffmangel in Küstengewässern usw. Wer das nicht glaub, darf gerne selbst nachforschen.</p>
+      `
+      ),
+      new Justification(
+        "nachhaltig",
+        "das Soja der Veganer zerstört die Regenwälder",
+        "Falsch, denn Soja wird hauptsächlich an Tiere verfüttert.",
+        html`
+        <p>Isst man ein Tier oder dessen Produkte, so isst man indirekt auch das, was das Tier gegessen hat. So
+        konsumiert man mit 100g Schweinefleisch indirekt ca. 60g Soja und mit einem Hühnerei rund 25g Soja. Insgesamt
+        konsumiert ein durchschnittlicher Europäer so täglich ca. 160g Soja.</p>
+        <p>Hinzu kommt, dass Soja, welches Tieren verfüttert wird, zu grossen Teilen aus Brasilien importiert wird
+        während Soja, das von Veganern konsumiert wird, überwiegend aus Europa und somit nicht aus Regenwaldregionen
+        stammt. Wer den Regenwald schützen möchte, sollte also vegan sein.</p>
       `
       ),
       new Justification(
         "ungesund",
         "vegan zu sein ist ungesund",
+        "Hunderttausende Ernährungswissenschaftler behaupten das Gegenteil.",
         html`
         <p>Worauf basiert diese Behauptung? Bestimmt nicht auf den Aussagen der <i>American Dietetic Association</i>
         oder der <i>British Dietetic Association</i>, den zwei grössten Verbänden aus Experten für Ernährung und Diät.
@@ -494,6 +566,7 @@
       new Justification(
         "protein",
         "pflanzliche Produkte liefern zu wenig Protein",
+        "Falsch, viele pflanzliche Produkte beinhalten sogar mehr Protein.",
         html`
         <p>Wer dies denkt, sollte sich unbedingt informieren. Mandeln, Tempeh, Chia Samen, Linsen, Erbsen, Kürbiskerne,
         Erdnüsse, Sojabohnen, Hanfsamen, Sonnenblumenkerne, Kidneybohnen, Kichererbsen, Lupinensamen, Seitan - sie alle
@@ -505,6 +578,7 @@
       new Justification(
         "eisen",
         "pflanzliche Produkte liefern zu wenig Eisen",
+        "Falsch, viele liefern sogar mehr als tierische Produkte",
         html`
         <p>Wer dies denkt, sollte sich unbedingt informieren. Tiere produzieren kein Eisen, sondern nehmen dieses über
         pflanzliche Nahrung auf. Wir können das Gleiche tun.</p>
@@ -513,6 +587,7 @@
       new Justification(
         "kalzium",
         "pflanzliche Produkte liefern zu wenig Kalzium",
+        "Falsch, viele liefern sogar mehr als tierische Produkte",
         html`
         <p>Wer dies denkt, sollte sich unbedingt informieren. Auch Kalzium kann in ausreichenden Mengen über pflanzliche
         Lebensmittel, Mineralwasser oder angereicherter, pflanzlicher Milch aufgenommen werden. Für den Abbau tierischer
@@ -525,6 +600,7 @@
       new Justification(
         "b12",
         "Vitamin B12 ist nur in tierischen Lebensmitteln enthalten",
+        "(Fast) falsch, aber irrelevant, da wir auch ohne Tiere an B12 kommen",
         html`
         <p>Vitamin B12 wird von Mikroorganismen wie Bakterien produziert.</p>
         <p>Böden, welche nicht zu sehr mit Chemikalien belastet sind, können sehr viele dieser B12 produzierende
@@ -548,6 +624,7 @@
       new Justification(
         "teuer",
         "vegan zu sein ist teuer",
+        "Vegane Lebensmittel gehören zu den günstigsten überhaupt.",
         html`
         <p>Zu den teuersten tierischen Produkten gehören Kobe-Rindfleisch, Blauflossen-Thunfisch und Kaviar, zu den
         günstigsten gehören Milch, Eier und Geflügel.
@@ -562,6 +639,7 @@
       new Justification(
         "unappetitlich",
         "veganes Essen schmeckt nicht",
+        "Viele beliebte und alltägliche Lebensmittel sind bereits vegan.",
         html`
         <p>Selbst nicht-Veganer essen sehr viele vegane Produkte. Brot, Pasta, Reis, Kornflakes, Suppen, Kekse,
         Kartoffelchips, Pommes, gebratenes Gemüse, Kartoffelgerichte, Oreos, Salate uvm. sind meist vegan, ohne dass es
@@ -572,6 +650,7 @@
       new Justification(
         "ernte",
         "bei der Ernte von Getreide sterben viel mehr Tiere",
+        "Die Fütterung von Tieren benötigt viel mehr Getreide.",
         html`
         <p>Um ein Tier bis zur Schlachtung durchzufüttern benötigt es viel mehr Getreide, als wenn wir dieses Getreide
         selbst essen würden. Somit ist man neben dem Tod des Tieres auch für alle Tode verantwortlich, die durch die
@@ -587,6 +666,7 @@
       new Justification(
         "leben-lassen",
         "könnt ihr Veganer nicht einfach Leben und Leben lassen?",
+        "Leben und Leben lassen ist genau der Grundgedanke des Veganismus.",
         html`
         <p>Zu jemandem, der niemanden töten will, zu sagen "leben und leben lassen" während man das Töten anderer in
         Auftrag gibt, ist an Scheinheiligkeit wohl kaum zu überbieten.</p>
@@ -595,6 +675,7 @@
       new Justification(
         "aufzwingen",
         "hört auf, anderen eure Meinung aufzuzwingen",
+        "Veganer respektieren die Meinung anderer, nicht sterben zu wollen.",
         html`
         <p>Die wenigsten Veganern versuchen, anderen ihre Meinung <i>aufzuzwingen</i>. Sie versuchen lediglich, Menschen
         über Missstände aufzuklären und diese zum Umdenken zu bewegen. Beides ist für jeden sozialen Fortschritt
@@ -609,6 +690,7 @@
       new Justification(
         "engstirnig",
         "Veganer sind engstirnig",
+        "Wären sie engstirnig, wären sie nicht Veganer geworden.",
         html`
         <p>Kaum jemand wurde als Veganer aufgezogen. Nahezu jeder wurde mit der gleichen Unwissenheit oder Ignoranz
         aufgezogen, von der Industrie belogen und verblendet und hat es geliebt, tierische Produkte zu konsumieren. Doch
@@ -620,6 +702,7 @@
       new Justification(
         "baby",
         "ich habe von einer veganen Familie gehört, deren Baby starb",
+        "Daran war nicht der Veganismus schuld.",
         html`
         <p>Dieses Baby starb an Unterernährung. Veganismus hat mit Unterernährung nichts zu tun. Nur weil eine vegane
         Familie ihre elterliche Pflicht nicht erfüllte, sagt dies nichts über Veganismus aus. Es gibt genauso
@@ -630,6 +713,7 @@
       new Justification(
         "auto",
         "beim Autofahren sterben auch Tiere",
+        "Versehentliches Töten rechtfertigt nicht absichtliches Töten.",
         html`
         <p>Sterben Insekten, weil sie gegen die Windschutzscheibe knallen, oder wird versehentlich ein Igel überfahren,
         so ist dies bedauerlich. Moralisch gesehen besteht jedoch ein grosser Unterschied zwischen einem Unfall und einer
@@ -641,6 +725,7 @@
       new Justification(
         "medikamente",
         "Medikamente sind auch nicht vegan",
+        ".",
         html`
         <p>Zum einen gibt es durchaus wirksame Medikamente, die vegan sind. Zum anderen ist manchmal unmöglich an völlig
         vegane Medikamente zu gelangen, da beispielsweise für die Zulassung von Impfstoffen Tierversuche gesetzlich
@@ -656,14 +741,17 @@
         man etwa das eigene Haustier opfern um für die Forschung gequält und anschliessend getötet zu werden? Oder würde
         man sagen, es hat damit nichts zu tun und man akzeptiert lieber die Situation, als es durch die Hölle zu schicken
         nur um möglicherweise ein Heilmittel zu finden? Zum Glück ist es jedoch nicht eine entweder/oder Situation, denn
-        es gibt mittlerweile Alternativen zu Tierversuchen.</p>
-        <p>Übrigens: Rund 90% aller neuen Medikamente, die bei Tierversuchen erfolgreich waren, versagen beim
-        Menschen.</p>
+        es gibt mittlerweile Alternativen zu Tierversuchen. Übrigens: Rund 90% aller neuen Medikamente, die bei
+        Tierversuchen erfolgreich waren, versagen beim Menschen.</p>
+        <p>Doch selbst wenn manche Medikamente nicht vegan sind, so ist das kein Grund dafür den Tieren noch mehr
+        unnötiges Leid zuzufügen, indem wir sie für ihr Fleisch, ihre Ausscheidungen und ihre Haut ausbeuten und töten.
+        </p>
       `
       ),
       new Justification(
         "nihilist",
         "ich bin Nihilist, mir ist alles egal ausser ich selbst",
+        "Tierische Produkte wirken sich auch negativ auf uns aus.",
         html`
         <p>Das ist höchst unwahrscheinlich. Aber selbst wenn es so wäre, eine pflanzenbasierte Ernährung hat viele
         gesundheitliche Vorteile gegenüber einer tierbasierten. Ausserdem ist die Tierindustrie eine der grössten
@@ -675,6 +763,7 @@
       new Justification(
         "haustiere",
         "unsere Haustiere benötigen Fleisch",
+        "Das ist kein Grund dafür, noch weitere Tiere zu töten.",
         html`
         <p>Was man seinem Haustier zu essen gibt hat nichts damit zu tun, was man selbst konsumiert.</p>
         <p>Als Tierhalter ist man für das Leid, welches das eigene Tier verursacht, mitverantwortlich - insbesondere dann,
@@ -695,6 +784,7 @@
       new Justification(
         "kriege",
         "es gibt Kriege auf der Welt und Menschen verhungern",
+        "Das ist kein Grund dafür, Tiere zu töten.",
         html`
         <p>Das ist schrecklich. Der Grund dafür ist aber nicht, dass wir zu wenig tierische Produkte konsumieren. Daher
         ist es auch irrelevant und keine valide Rechtfertigung dafür, dies zu tun. Im Gegenteil; die Tierwirtschaft
@@ -706,6 +796,7 @@
       new Justification(
         "handys",
         "für Handys arbeiten Kinder in Kobalt-Minen",
+        "Das ist kein Grund dafür, Tiere zu töten.",
         html`
         <p>Der Kauf tierischer Produkte hilft nicht, diese Situation zu verbessern. Nur weil wir Leid an einem Ort
         verursachen, bedeutet dies nicht, dass wir Leid auch an einem anderen Ort verursachen müssen. Das sind zwei
@@ -715,6 +806,7 @@
       new Justification(
         "grössere-probleme",
         "wir Menschen haben grössere Probleme",
+        "Das hält uns nicht davon ab, Tiere zu verschonen.",
         html`
         <p>Ignorieren wir für einen Moment, dass der Konsum tierischer Produkte massive negative Folgen für die heutige
         und vor allem auf die kommenden Generationen hat. Aus der Sicht der Tiere ist es ein gigantisches Problem. Wir
@@ -734,15 +826,16 @@
       new Justification(
         "alle-probleme",
         "wir können nicht alle Probleme dieser Welt lösen",
+        "Das ist kein Grund dafür, Tiere zu töten. Vegan zu sein ist passiv und hilft, viele Probleme zu lösen.",
         html`
         <p>Unsere Ressourcen sind beschränkt und wir können nicht alle Probleme gleichzeitig lösen. Vegan zu leben ist
         jedoch passiv und sehr einfach. Wir müssen dafür weder unsere Jobs kündigen, noch unser Geld spenden, noch unsere
         Freizeit opfern. Wir müssen nur bestimmte Angebote vermeiden oder sie durch andere ersetzen.</p>
-        <p>Doch vegan zu sein hilft nicht nur den Tieren. Es reduziert Plastik, das ins Meer gelangt, und den Ausstoss
-        von Treibhausgasen. Es reduziert die benötigte Landfläche und somit die Abholzung der Regenwälder. Es vermindert
-        die Belastung unserer Böden und Gewässer. Es hilft Fischbeständen, sich zu erholen. Es zwingt niemanden,
-        in einem Schlachthaus zu arbeiten und es fördert das Mitgefühl mit allen menschlichen und nicht-menschlichen
-        Wesen.</p>
+        <p>Doch vegan zu sein hilft nicht nur den Tieren. Es reduziert Plastik, das von der Fischerei ins Meer gelangt,
+        es reduziert den Ausstoss von Treibhausgasen, es reduziert die benötigte Landfläche, reduziert somit die
+        Abholzung der Regenwälder und fördert die Biodiversität. Es vermindert die Belastung unserer Böden und Gewässer.
+        Es hilft Fischbeständen, sich zu erholen. Es zwingt niemanden, in einem Schlachthaus zu arbeiten und es
+        reduziert Hass und Diskriminierung gegenüber sämtlichen Lebewesen.</p>
         <p>Vegan zu sein ist möglicherweise die einfachste und effektivste Entscheidung, die man treffen kann.</p>
       `
       ),
@@ -756,9 +849,9 @@
       return html`
       <div class="text-justify card">
       <h2 id="${props.justification.id}" class="card-title font-size-16">
-        ${props.nr} Ja, aber ${props.justification.claim} <a href="#${props.justification.id}">#</a>
+        ${props.nr} ${props.justification.claim.capitalize()} <a href="#${props.justification.id}">#</a>
       </h2>
-      ${props.justification.refutation}
+      ${props.justification.longRefutation}
       </div>
     `;
     }
@@ -768,7 +861,7 @@
       <div class="card">
         <ol>
         ${props.justifications.map(justification => html`
-          <li><a href="#${justification.id}">Ja, aber ${justification.claim}</a></li>
+          <li><a href="#${justification.id}">${justification.claim.capitalize()}</a></li>
         `)}
         </ol>
       </div>
@@ -792,10 +885,9 @@
     }
 
     render(html`<${App} justifications="${justifications}" />`, document.getElementById('root'));
-    halfmoon.toggleDarkMode()
   </script>
 </head>
-<body>
+<body class="dark-mode">
 
 <div id="root"></div>
 <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
