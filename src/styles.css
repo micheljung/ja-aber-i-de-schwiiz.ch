@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Mj Handwriting";
+  src: url("/fonts/MjHandwriting/MjHandwriting-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+g {
+  stroke: currentColor;
+}
+
+text {
+  fill: currentColor;
+  font-family: "Mj Handwriting", "sans-serif";
+}
