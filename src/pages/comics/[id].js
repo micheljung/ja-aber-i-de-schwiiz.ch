@@ -1,34 +1,17 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
-
-const files = [
-  {id: "c1_extrem", path: "../../comics/c1_extrem.svg"}
-]
+import ComicComponent, {comics} from "../../components/ComicComponent";
 
 export default function Comic({id}) {
-  const ComicComponent = loadComic(id)
-
   return (
     <div>
       <h1>Comic</h1>
-      <div className="comicWrapper">
-      <ComicComponent className="comic" />
-      </div>
+      <ComicComponent id={id}/>
     </div>
   )
 }
 
-function loadComic(id) {
-  switch (id) {
-    case "c1_extrem":
-      return dynamic(() => import("../../comics/c1_extrem.svg"))
-    default:
-      return 404
-  }
-}
-
 export async function getStaticPaths() {
-  let paths = files.map(file => ({
+  let paths = comics.map(file => ({
     params: {
       id: file.id
     }
