@@ -11,9 +11,9 @@ export default function Comic({id}) {
 }
 
 export async function getStaticPaths() {
-  let paths = comics.map(file => ({
+  let paths = comics.map(comic => ({
     params: {
-      id: file.id
+      id: comic.id
     }
   }))
   return {paths, fallback: false};

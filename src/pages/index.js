@@ -21,7 +21,7 @@ export default function Home() {
         <DarkModeButton/>
       </header>
 
-      <main className="flex-auto p-2">
+      <main className="flex-auto p-2 gap-4">
 
 
         <div className="mx-auto lg:w-1/2">
