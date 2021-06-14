@@ -5,11 +5,14 @@ export const comics = [
   {id: "1", path: "../../comics/1.svg"},
 ]
 
-export default function ComicComponent({id}) {
+export default function ComicComponent({id, title, description}) {
   const Svg = loadComic(id)
 
   return (
-    <Svg className="text-black dark:text-gray-300"/>
+    <div>
+      <h1>{title}</h1>
+      <Svg className="text-black dark:text-gray-300"/>
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ export default function SocialMediaLink({icon, title, description, url}) {
   return <a
     key={url}
     href={url}
-    className="p-6 max-w-sm mx-auto bg-red-100 dark:bg-gray-700 rounded-xl shadow-md flex flex-grow w-56 items-center space-x-4">
+    className="px-4 py-2 dark:bg-gray-700 rounded-xl shadow-md flex flex-grow lg:w-56 items-center space-x-4">
     <div className="flex-shrink-0">
       <img className="h-12 w-12" src={icon} alt="Instagram Logo"/>
     </div>
