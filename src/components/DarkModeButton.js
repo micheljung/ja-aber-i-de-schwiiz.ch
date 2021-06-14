@@ -3,7 +3,7 @@ import { useTheme } from 'next-themes';
 
 export default function DarkModeButton() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   useEffect(() => setMounted(true), []);
 
   return (
@@ -11,7 +11,7 @@ export default function DarkModeButton() {
       aria-label="Toggle Dark Mode"
       type="button"
       className="flex items-center justify-center h-12 w-12"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       {mounted && (
         <svg
@@ -20,7 +20,7 @@ export default function DarkModeButton() {
           fill="currentColor"
           className="h-8 w-8 text-gray-800 dark:text-gray-200"
         >
-          {theme === 'dark' ? (
+          {resolvedTheme === 'dark' ? (
             <path
               className="nostroke"
               fillRule="evenodd"
