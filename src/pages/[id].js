@@ -6,6 +6,7 @@ import ArrowIcon from "../../public/icons/arrow.svg";
 import RandomIcon from "../../public/icons/random.svg";
 import SocialMediaLink from "../components/SocialMediaLink";
 import ComicNavigation from "../components/ComicNavigation";
+import CreativeCommons from "../components/CreativeCommons";
 
 export default function Comic({id = "1"}) {
 
@@ -18,6 +19,7 @@ export default function Comic({id = "1"}) {
           <ComicNavigation />
           <ComicComponent id={id}/>
           <ComicNavigation />
+          <CreativeCommons />
         </div>
 
         <div className="flex flex-wrap gap-4">
