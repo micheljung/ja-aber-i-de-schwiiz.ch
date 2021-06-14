@@ -5,14 +5,14 @@ export const comics = {
   "1": {title: "Tierische Produkte zu vermeiden ist extrem"},
 }
 
-export default function ComicComponent({id}) {
+export default function ComicComponent({id, showTitle = true}) {
   const Svg = loadComic(id)
   const title = comics[id].title
 
   return (
     <div>
-      <h1>{title}</h1>
-      <Svg className="text-black dark:text-gray-300"/>
+      {showTitle && (<h1>{title}</h1>)}
+      <Svg className="text-black dark:text-gray-300 w-48"/>
     </div>
   )
 }
