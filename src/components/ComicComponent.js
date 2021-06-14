@@ -11,7 +11,7 @@ export default function ComicComponent({id, showTitle = true}) {
 
   return (
     <div className="flex-grow">
-      {showTitle && (<h1>{title}</h1>)}
+      {showTitle && (<h1 className="pt-4 text-lg text-center">{title}</h1>)}
       <Svg className="text-black dark:text-gray-300"/>
     </div>
   )

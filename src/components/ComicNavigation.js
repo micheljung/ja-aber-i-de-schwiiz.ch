@@ -22,7 +22,7 @@ export default function ComicNavigation({comicId}) {
     router.push(url, undefined)
   }
 
-  return <div className="flex flex-row h-12 justify-center gap-4 content-center">
+  return <div className="flex flex-row justify-center gap-4 content-center">
     <button className="h-8 w-8 bg-gray-200 dark:bg-gray-700 rounded-md p-2" onClick={() => navigate(-1)}>
       <ArrowIcon className="w-4 h-4" transform="scale(-1,1)"/>
     </button>
