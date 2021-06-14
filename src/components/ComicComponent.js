@@ -23,8 +23,6 @@ function loadComic(id) {
   switch (id) {
     case "1":
       return dynamic(() => import("../comics/1.svg"))
-    case "2":
-      return dynamic(() => import("../comics/2.svg"))
     default:
       throw "Unknown ID: " + id
   }
