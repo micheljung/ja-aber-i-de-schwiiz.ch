@@ -1,12 +1,14 @@
 import dynamic from "next/dynamic";
 import React from "react";
 
-export const comics = [
-  {id: "1", path: "../../comics/1.svg"},
-]
+export const comics = {
+  "1": {title: "Tierische Produkte zu vermeiden ist extrem"},
+  "2": {title: "2 Tierische Produkte zu vermeiden ist extrem"},
+}
 
-export default function ComicComponent({id, title, description}) {
+export default function ComicComponent({id}) {
   const Svg = loadComic(id)
+  const title = comics[id].title
 
   return (
     <div>
@@ -17,9 +19,12 @@ export default function ComicComponent({id, title, description}) {
 }
 
 function loadComic(id) {
+  // Next.js requires hardcoded paths
   switch (id) {
     case "1":
       return dynamic(() => import("../comics/1.svg"))
+    case "2":
+      return dynamic(() => import("../comics/2.svg"))
     default:
       throw "Unknown ID: " + id
   }

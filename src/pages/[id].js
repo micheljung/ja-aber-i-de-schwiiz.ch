@@ -62,9 +62,9 @@ export default function Comic({id = "1"}) {
 }
 
 export async function getStaticPaths() {
-  let paths = comics.map(comic => ({
+  let paths = Object.getOwnPropertyNames(comics).map(comicId => ({
     params: {
-      id: comic.id
+      id: comicId
     }
   }))
   return {paths, fallback: false};
