@@ -3,7 +3,6 @@ import React from "react";
 
 export const comics = {
   "1": {title: "Tierische Produkte zu vermeiden ist extrem"},
-  "2": {title: "2 Tierische Produkte zu vermeiden ist extrem"},
 }
 
 export default function ComicComponent({id}) {
