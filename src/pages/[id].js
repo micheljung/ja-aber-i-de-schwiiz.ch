@@ -16,9 +16,9 @@ export default function Comic({id = "1"}) {
       <main className="p-2 gap-4">
 
         <div className="mx-auto lg:w-1/2">
-          <ComicNavigation />
+          <ComicNavigation comicId={id} />
           <ComicComponent id={id}/>
-          <ComicNavigation />
+          <ComicNavigation comicId={id} />
         </div>
 
         <div className="flex flex-wrap gap-4">
