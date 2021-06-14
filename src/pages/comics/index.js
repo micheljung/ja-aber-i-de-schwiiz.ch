@@ -5,7 +5,6 @@ import ComicComponent, {comics} from "../../components/ComicComponent";
 export default function Comics() {
   return (
     <div>
-      <h1>Comics</h1>
       <div className="flex flex-wrap gap-4">
         {Object.getOwnPropertyNames(comics).map((comicId) => (
           <Link key={comicId} href={`/comics/${comicId}`}><a>
