@@ -19,7 +19,6 @@ export default function Comic({id = "1"}) {
           <ComicNavigation />
           <ComicComponent id={id}/>
           <ComicNavigation />
-          <CreativeCommons />
         </div>
 
         <div className="flex flex-wrap gap-4">
@@ -48,7 +47,9 @@ export default function Comic({id = "1"}) {
       </main>
 
       <footer>
-        <div className="flex justify-center text-gray-400 p-4">
+        <CreativeCommons />
+
+        <div className="flex justify-center text-gray-400">
           Quelltext auf&nbsp;<a
           href="https://github.com/micheljung/ja-aber-i-de-schwiiz.ch"
           target="_blank"
