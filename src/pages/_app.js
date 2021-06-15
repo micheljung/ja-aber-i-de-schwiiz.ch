@@ -14,7 +14,7 @@ function App({Component, pageProps}) {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
 
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen overflow-x-hidden gap-4">
         <header className="flex flex-row">
           <div className="title dark:text-gray-200 flex flex-wrap flex-grow content-center">
             Ja, aber i de Schwiiz...

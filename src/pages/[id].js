@@ -15,7 +15,7 @@ export default function Comic({id = "1"}) {
         <ComicComponent id={id}/>
         <ComicNavigation comicId={id}/>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 mx-1">
 
           <SocialMediaLink
             icon="/icons/instagram.svg"
