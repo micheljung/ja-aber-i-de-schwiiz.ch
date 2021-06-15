@@ -10,9 +10,9 @@ export default function ComicComponent({id, showTitle = true}) {
   const title = comics[id].title
 
   return (
-    <div className="w-auto mx-1">
-      {showTitle && (<h1 className="text-lg text-center font-bold">{title}</h1>)}
-      <Svg className="border text-black dark:text-gray-300"/>
+    <div className="grid grid-col-1 gap-4 w-auto mx-1">
+      {showTitle && (<h1 className="text-md xl:text-xl text-center font-bold">{title}</h1>)}
+      <Svg className="mx-auto border border-black dark:border-gray-300 text-black dark:text-gray-300 xl:w-4/5 "/>
     </div>
   )
 }
