@@ -3,8 +3,11 @@ import ComicComponent, {comics} from "../components/ComicComponent";
 import SocialMediaLink from "../components/SocialMediaLink";
 import ComicNavigation from "../components/ComicNavigation";
 import CreativeCommons from "../components/CreativeCommons";
+import ComicDownloader from "../components/ComicDownloader";
 
 export default function Comic({id = "1"}) {
+
+  const comicElementId = `comic-${id}`
 
   return (
     <div className="">
@@ -14,6 +17,8 @@ export default function Comic({id = "1"}) {
         <ComicNavigation comicId={id}/>
         <ComicComponent id={id}/>
         <ComicNavigation comicId={id}/>
+
+        <ComicDownloader comicElementId={comicElementId}/>
 
         <div className="flex flex-wrap gap-2 mx-1 justify-center">
 
@@ -41,7 +46,9 @@ export default function Comic({id = "1"}) {
       </main>
 
       <footer>
-        <CreativeCommons/>
+        <div className="flex justify-center">
+          <CreativeCommons/>
+        </div>
 
         <div className="text-center text-gray-400">
           Quelltext auf&nbsp;<a
