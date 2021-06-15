@@ -1,11 +1,11 @@
 <svg width="1e3" height="1e3" version="1.1" viewBox="0 0 1e3 1e3" xmlns="http://www.w3.org/2000/svg">
-  <text x="504.60992" y="590.28595" style="fill:#000000;font-size:32px;line-height:1" xml:space="preserve"><tspan x="504.60992" y="590.28595" style="text-align:end;text-anchor:end">Tierischi Produkt sind unnötig und</tspan>
-    <tspan x="504.60992" y="623.57343" style="text-align:end;text-anchor:end">verursached endlos viel Leid.</tspan>
-    <tspan x="504.60992" y="656.86096" style="text-align:end;text-anchor:end"/>
-    <tspan x="504.60992" y="690.14844" style="text-align:end;text-anchor:end">Ich find das schlecht, darum</tspan>
-    <tspan x="504.60992" y="723.43597" style="text-align:end;text-anchor:end">konsumiere ich lieber</tspan>
-    <tspan x="504.60992" y="756.72345" style="text-align:end;text-anchor:end">öppis anderes.</tspan></text>
-  <text x="400.34082" y="504.96582" font-size="20px" xml:space="preserve">ja-aber-i-de-schwiiz.ch</text>
+  <text x="510.60992" y="590.28595" style="fill:#000000;font-size:36px;line-height:1" xml:space="preserve"><tspan x="510.60992" y="590.28595" style="text-align:end;text-anchor:end">Tierischi Produkt sind unnötig und</tspan>
+    <tspan x="510.60992" y="623.57343" style="text-align:end;text-anchor:end">verursached endlos viel Leid.</tspan>
+    <tspan x="510.60992" y="656.86096" style="text-align:end;text-anchor:end"/>
+    <tspan x="510.60992" y="690.14844" style="text-align:end;text-anchor:end">Ich find das schlecht, darum</tspan>
+    <tspan x="510.60992" y="723.43597" style="text-align:end;text-anchor:end">konsumiere ich lieber</tspan>
+    <tspan x="510.60992" y="756.72345" style="text-align:end;text-anchor:end">öppis anderes.</tspan></text>
+  <text x="400.34082" y="504.96582" font-size="22px">ja-aber-i-de-schwiiz.ch</text>
   <g fill="none" stroke="#000" stroke-width="5px">
     <path d="m0 500h394.23"/>
     <path d="m605.77 500h394.23"/>
@@ -36,13 +36,13 @@
     </g>
     <path class="nostroke" d="m257.69 332.06h9.6962v11.312h11.312v9.6962h-11.312v11.312h-9.6962v-11.312h-11.312v-9.6962h11.312z" fill="white"/>
   </g>
-  <text x="777.27863" y="154.6375" fill="#000000" font-size="40px" text-anchor="middle" style="line-height:1" xml:space="preserve">Das findi vernünftig.</text>
-  <text x="499.07187" y="83.50515" style="fill:#000000;font-size:32px;line-height:1" xml:space="preserve"><tspan x="499.07187" y="83.50515" style="text-align:end;text-anchor:end">Tierischi Produkt sind unnötig und</tspan>
-    <tspan x="499.07187" y="116.79265" style="text-align:end;text-anchor:end">verursached endlos viel Leid.</tspan>
-    <tspan x="499.07187" y="150.08015" style="text-align:end;text-anchor:end"/>
-    <tspan x="499.07187" y="183.36765" style="text-align:end;text-anchor:end">Ich find das schlecht, aber ich </tspan>
-    <tspan x="499.07187" y="216.65515" style="text-align:end;text-anchor:end">konsumiere trotzdem</tspan>
-    <tspan x="499.07187" y="249.94264" style="text-align:end;text-anchor:end">tierischi Produkt.</tspan></text>
+  <text x="777.27863" y="154.6375" fill="#000000" font-size="36px" text-anchor="middle" style="line-height:1" xml:space="preserve">Das findi vernünftig.</text>
+  <text x="509.07187" y="83.50515" style="fill:#000000;font-size:36px;line-height:1" xml:space="preserve"><tspan x="509.07187" y="83.50515" style="text-align:end;text-anchor:end">Tierischi Produkt sind unnötig und</tspan>
+    <tspan x="509.07187" y="116.79265" style="text-align:end;text-anchor:end">verursached endlos viel Leid.</tspan>
+    <tspan x="509.07187" y="150.08015" style="text-align:end;text-anchor:end"/>
+    <tspan x="509.07187" y="183.36765" style="text-align:end;text-anchor:end">Ich find das schlecht, aber ich </tspan>
+    <tspan x="509.07187" y="216.65515" style="text-align:end;text-anchor:end">konsumiere trotzdem</tspan>
+    <tspan x="509.07187" y="249.94264" style="text-align:end;text-anchor:end">tierischi Produkt.</tspan></text>
   <g transform="translate(-114.22 504.36)">
     <g stroke="#000" stroke-width="3">
       <path d="m266.56 235.57c-4.6015 0.072-9.3221 0.34732-13.651 1.9465-3.4732 1.2829-6.8653 2.905-9.7605 5.2578-7.2491 5.8911-11.497 15.402-10.66 24.778 0.53202 5.9563 3.5543 11.535 7.9727 15.533 4.3404 3.9278 9.7402 6.6602 15.405 7.9697 2.8421 0.65704 5.796 0.71374 8.6964 0.55115 6.7467-0.3782 13.394-2.9186 18.5-7.3817 3.4691-3.032 6.3845-6.7501 8.3382-10.918 2.0385-4.3484 2.5694-9.2784 2.2575-14.033-0.25638-3.9086-1.5598-7.7122-3.6997-10.998-1.8454-2.8335-4.4998-4.9805-6.9571-7.289-4.3715-4.1069-10.598-5.5193-16.442-5.4171z" fill="none"/>
@@ -69,5 +69,5 @@
     </g>
     <path class="nostroke" d="m257.69 332.06h9.6962v11.312h11.312v9.6962h-11.312v11.312h-9.6962v-11.312h-11.312v-9.6962h11.312z" fill="white"/>
   </g>
-  <text x="782.81671" y="661.41827" fill="#000000" font-size="40px" text-anchor="middle" style="line-height:1" xml:space="preserve">Das findi extrem.</text>
+  <text x="782.81671" y="661.41827" fill="#000000" font-size="36px" text-anchor="middle" style="line-height:1" xml:space="preserve">Das findi extrem.</text>
 </svg>
