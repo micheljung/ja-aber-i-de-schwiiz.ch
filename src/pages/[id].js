@@ -1,9 +1,5 @@
 import React from 'react'
 import ComicComponent, {comics} from "../components/ComicComponent";
-import Head from "next/head";
-import DarkModeButton from "../components/DarkModeButton";
-import ArrowIcon from "../../public/icons/arrow.svg";
-import RandomIcon from "../../public/icons/random.svg";
 import SocialMediaLink from "../components/SocialMediaLink";
 import ComicNavigation from "../components/ComicNavigation";
 import CreativeCommons from "../components/CreativeCommons";
@@ -11,15 +7,13 @@ import CreativeCommons from "../components/CreativeCommons";
 export default function Comic({id = "1"}) {
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="">
 
-      <main className="grid grid-cols-1 p-2 gap-4">
+      <main className="grid grid-cols-1 gap-4">
 
-        <div className="mx-auto lg:w-1/2 h-96">
-          <ComicNavigation comicId={id} />
-          <ComicComponent id={id}/>
-          <ComicNavigation comicId={id} />
-        </div>
+        <ComicNavigation comicId={id}/>
+        <ComicComponent id={id}/>
+        <ComicNavigation comicId={id}/>
 
         <div className="flex flex-wrap gap-4">
 
@@ -47,9 +41,9 @@ export default function Comic({id = "1"}) {
       </main>
 
       <footer>
-        <CreativeCommons />
+        <CreativeCommons/>
 
-        <div className="flex justify-center text-gray-400">
+        <div className="text-center text-gray-400">
           Quelltext auf&nbsp;<a
           href="https://github.com/micheljung/ja-aber-i-de-schwiiz.ch"
           target="_blank"
