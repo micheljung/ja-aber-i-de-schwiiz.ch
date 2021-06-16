@@ -2,7 +2,8 @@ import dynamic from "next/dynamic";
 import React from "react";
 
 export const comics = {
-  "1": {title: "Kein Leid verursachen zu wollen, ist extrem"},
+  "1": {title: "Kein Leid verursachen zu wollen ist extrem"},
+  "2": {title: "Vegan zu sein belastet die Psyche"},
 }
 
 export default function ComicComponent({id, showTitle = true}) {
@@ -22,6 +23,8 @@ function loadComic(id) {
   switch (id) {
     case "1":
       return dynamic(() => import("../comics/1.svg"))
+    case "2":
+      return dynamic(() => import("../comics/2.svg"))
     default:
       throw "Unknown ID: " + id
   }
