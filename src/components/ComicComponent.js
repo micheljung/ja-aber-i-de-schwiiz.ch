@@ -5,6 +5,7 @@ export const comics = {
   "1": {title: "Kein Leid verursachen zu wollen ist extrem"},
   "2": {title: "Vegan zu sein belastet die Psyche"},
   "3": {title: "Autofahren tötet Insekten"},
+  "4": {title: "Vegetarier"},
 }
 
 export default function ComicComponent({id, showTitle = true}) {
@@ -28,6 +29,8 @@ function loadComic(id) {
       return dynamic(() => import("../comics/2.svg"))
     case "3":
       return dynamic(() => import("../comics/3.svg"))
+    case "4":
+      return dynamic(() => import("../comics/4.svg"))
     default:
       throw "Unknown ID: " + id
   }
