@@ -5,7 +5,7 @@ export const comics = {
   "1": {title: "Kein Leid verursachen zu wollen ist extrem"},
   "2": {title: "Vegan zu sein belastet die Psyche"},
   "3": {title: "Autofahren tötet Insekten"},
-  "4": {title: "Vegetarier"},
+  "4": {title: "Es reicht, Vegetarier zu sein"},
 }
 
 export default function ComicComponent({id, showTitle = true}) {
