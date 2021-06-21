@@ -10,9 +10,15 @@ export default function ComicDownloader({comicElementId}) {
 
   function download(scale) {
 
-    let element = document.getElementById(`${comicElementId}`);
+    const element = document.getElementById(`${comicElementId}`);
+    let backgroundColor = window.getComputedStyle(document.getElementsByTagName("body")[0]).backgroundColor
+    if (backgroundColor === "rgba(0, 0, 0, 0)") {
+      backgroundColor = "white";
+    }
+
     saveSvgAsPng.saveSvgAsPng(element, `${comicElementId}-x${scale}.png`, {
       scale: scale,
+      backgroundColor: backgroundColor,
       modifyStyle: (properties) => {
         return properties.replace(/currentColor/i, window.getComputedStyle(element).color);
       }
