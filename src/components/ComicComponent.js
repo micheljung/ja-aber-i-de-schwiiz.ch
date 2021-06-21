@@ -61,7 +61,7 @@ class ComicComponent extends React.Component {
       case "4":
         return dynamic(() => import("../comics/4.svg"), {loading: () => loader})
       case "5":
-        return dynamic(() => import("../comics/4.svg"), {loading: () => loader})
+        return dynamic(() => import("../comics/5.svg"), {loading: () => loader})
       default:
         throw "Unknown ID: " + id
     }
