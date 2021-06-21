@@ -22,5 +22,7 @@ module.exports = {
       textColor: ['visited']
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

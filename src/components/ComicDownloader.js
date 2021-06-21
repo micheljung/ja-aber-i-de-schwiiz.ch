@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 const saveSvgAsPng = require('save-svg-as-png')
 
 export default function ComicDownloader({comicElementId}) {
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+  useEffect(() => setMounted(true), []);
+
   function download(scale) {
+
     let element = document.getElementById(`${comicElementId}`);
     saveSvgAsPng.saveSvgAsPng(element, `${comicElementId}-x${scale}.png`, {
       scale: scale,
-      backgroundColor: 'white',
+      // backgroundColor: window.getComputedStyle(document.getElementsByTagName("body")[0]).backgroundColor,
+      // backgroundColor: "white",
+      // modifyCss: (selector, properties) => {
+      //
+      // }
+      selectorRemap: (selector) => {
+        console.log(selector)
+        return selector
+      }
     });
   }
 
