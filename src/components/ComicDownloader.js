@@ -5,7 +5,7 @@ const saveSvgAsPng = require('save-svg-as-png')
 
 export default function ComicDownloader({comicElementId}) {
   const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+  const { resolvedTheme} = useTheme();
   useEffect(() => setMounted(true), []);
 
   function download(scale) {
@@ -16,7 +16,7 @@ export default function ComicDownloader({comicElementId}) {
       backgroundColor = "white";
     }
 
-    saveSvgAsPng.saveSvgAsPng(element, `${comicElementId}-x${scale}.png`, {
+    saveSvgAsPng.saveSvgAsPng(element, `${comicElementId}-x${scale}-${resolvedTheme}.png`, {
       scale: scale,
       backgroundColor: backgroundColor,
       modifyStyle: (properties) => {
