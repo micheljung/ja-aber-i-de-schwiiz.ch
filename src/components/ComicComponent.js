@@ -30,9 +30,6 @@ class ComicComponent extends React.Component {
   render() {
     const Svg = this.loadComic(this.props.id)
     const title = comics[this.props.id].title
-    const loader = <div className="aspect-h-1 aspect-w-1">
-      <div></div>
-    </div>;
 
     return (
       <div className="grid grid-col-1 gap-4 w-auto mx-1">
