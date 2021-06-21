@@ -13,14 +13,8 @@ export default function ComicDownloader({comicElementId}) {
     let element = document.getElementById(`${comicElementId}`);
     saveSvgAsPng.saveSvgAsPng(element, `${comicElementId}-x${scale}.png`, {
       scale: scale,
-      // backgroundColor: window.getComputedStyle(document.getElementsByTagName("body")[0]).backgroundColor,
-      // backgroundColor: "white",
-      // modifyCss: (selector, properties) => {
-      //
-      // }
-      selectorRemap: (selector) => {
-        console.log(selector)
-        return selector
+      modifyStyle: (properties) => {
+        return properties.replace(/currentColor/i, window.getComputedStyle(element).color);
       }
     });
   }
