@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css'
 import '../styles.css';
 import DarkModeButton from "../components/DarkModeButton";
 import Head from "next/head";
+import CreativeCommons from "../components/CreativeCommons";
 
 function App({Component, pageProps}) {
   return (
@@ -27,6 +28,20 @@ function App({Component, pageProps}) {
 
         <Component {...pageProps} />
       </div>
+
+      <footer className="mt-4 bg-gray-200 dark:bg-gray-900">
+        <div className="flex justify-center">
+          <CreativeCommons/>
+        </div>
+
+        <div className="text-center text-gray-600 dark:text-gray-400">
+          Quelltext auf&nbsp;<a
+          href="https://github.com/micheljung/ja-aber-i-de-schwiiz.ch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+        </div>
+      </footer>
     </ThemeProvider>
   )
 }
