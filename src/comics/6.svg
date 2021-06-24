@@ -198,7 +198,7 @@
            sodipodi:nodetypes="ccaacc" />
         <text
            xml:space="preserve"
-           style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+           style="font-size:40px;line-height:1.25;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
            x="205.25508"
            y="33.648018"
            id="text1047"><tspan
@@ -236,7 +236,6 @@
      inkscape:transform-center-y="-0.44060237" />
   <text
      xml:space="preserve"
-     style="font-family:'MJ Handwriting'"
      x="13.787599"
      y="41.578941"
      id="text1159-0"
@@ -251,17 +250,17 @@
        x="13.787599"
        y="81.578941"
        style="font-size:32px"
-       id="tspan1512">biilag! Hüehner leged ihri Eier grad is Regal! Chüeh gäbed d'Milch lieber</tspan><tspan
+       id="tspan1512">biilag! Hüehner leged ihri Eier direkt is Regal! Chüeh gäbed Milch nöd für</tspan><tspan
        sodipodi:role="line"
        x="13.787599"
        y="121.57894"
        style="font-size:32px"
-       id="tspan1516">eus als ihrem Baby! Über ihre Tod redet mir nöd, aber ihres Läbe isch</tspan><tspan
+       id="tspan1516">ihres Baby sondern für eus! Ihres Läbe isch frei vo Leid! Über ihre Tod</tspan><tspan
        sodipodi:role="line"
        x="13.787599"
        y="161.57895"
        style="font-size:32px"
-       id="tspan1420">wunderschön gsi! Gib mir endlich dis Geld!</tspan></text>
+       id="tspan1420">redet mir nöd aber vertrau mir, er isch human! Gib mir endlich dis Geld!</tspan></text>
   <path
      id="path1367-0"
      style="fill:#ffe200;fill-opacity:1;stroke:#000000;stroke-width:0.890452;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -364,8 +363,7 @@
      xml:space="preserve"
      x="44.819111"
      y="582.07111"
-     id="text1159-5"
-     style="font-family:'MJ Handwriting'"><tspan
+     id="text1159-5"><tspan
        sodipodi:role="line"
        x="44.819111"
        y="582.07111"
@@ -386,7 +384,7 @@
      x="958.17102"
      y="589.99817"
      id="text1159-5-6"
-     style="font-size:48px;font-family:'MJ Handwriting';text-align:end;text-anchor:end"><tspan
+     style="font-size:48px;text-align:end;text-anchor:end"><tspan
        sodipodi:role="line"
        x="958.17102"
        y="589.99817"
@@ -421,7 +419,7 @@
   </g>
   <text
     xml:space="preserve"
-    style="font-size:24px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle;"
+    style="font-size:24px;line-height:1.25;text-align:center;text-anchor:middle;"
     x="498.73755"
     y="507.21649"
     id="text1495"><tspan
