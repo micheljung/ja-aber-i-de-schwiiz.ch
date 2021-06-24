@@ -15,16 +15,6 @@ class ComicComponent extends React.Component {
   constructor(props) {
     super(props);
     this.comicElementId = `comic-${props.id}`;
-
-    this.svgElement = null;
-    this.setSvgElement = element => {
-      this.svgElement = element;
-    };
-  }
-
-  componentDidUpdate() {
-    // this.svgElement.innerHTML.replace("&amp;", "&");
-    console.log(this.svgElement)
   }
 
   render() {
@@ -35,7 +25,7 @@ class ComicComponent extends React.Component {
       <div className="grid grid-col-1 gap-4 w-auto mx-1">
         {this.props.showTitle && (<h1 className="text-md xl:text-xl text-center font-bold">{title}</h1>)}
         <div className="border border-black dark:border-gray-300 text-black dark:text-gray-300 xl:mx-auto xl:w-4/5">
-          <Svg id={this.comicElementId} ref={this.setSvgElement}/>
+          <Svg id={this.comicElementId} />
         </div>
       </div>
     )
