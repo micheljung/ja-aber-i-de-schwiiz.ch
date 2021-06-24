@@ -10,7 +10,7 @@ export default function Comic({id = "1"}) {
   const comicElementId = `comic-${id}`
 
   return (
-    <div className="">
+    <div>
 
       <main className="grid grid-cols-1 gap-4">
 

@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useTheme } from 'next-themes';
 
 const saveSvgAsPng = require('save-svg-as-png')
 
 export default function ComicDownloader({comicElementId}) {
-  const [mounted, setMounted] = useState(false);
   const { resolvedTheme} = useTheme();
-  useEffect(() => setMounted(true), []);
 
   function download(scale) {
 
