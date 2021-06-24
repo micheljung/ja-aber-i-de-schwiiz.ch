@@ -19,7 +19,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      textColor: ['visited']
+      textColor: ['visited'],
+      opacity: ['disabled'],
     }
   },
   plugins: [
