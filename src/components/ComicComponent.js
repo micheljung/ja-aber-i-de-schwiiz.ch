@@ -10,6 +10,19 @@ export const comics = {
   "6": {title: "Vegane Propaganda"},
 }
 
+const comicOptions = {loading: () => <div className="aspect-h-1 aspect-w-1">
+    <div className="text-center flex flex-col justify-center" style={{position: "absolute"}}>
+      Billige Comic ladet gli...
+    </div>
+  </div>}
+
+const Comic1 = dynamic(() => import("../comics/1.svg"), comicOptions)
+const Comic2 = dynamic(() => import("../comics/2.svg"), comicOptions)
+const Comic3 = dynamic(() => import("../comics/3.svg"), comicOptions)
+const Comic4 = dynamic(() => import("../comics/4.svg"), comicOptions)
+const Comic5 = dynamic(() => import("../comics/5.svg"), comicOptions)
+const Comic6 = dynamic(() => import("../comics/6.svg"), comicOptions)
+
 class ComicComponent extends React.Component {
 
   constructor(props) {
@@ -32,26 +45,21 @@ class ComicComponent extends React.Component {
   }
 
   loadComic(id) {
-    const loader = <div className="aspect-h-1 aspect-w-1">
-      <div className="text-center flex flex-col justify-center" style={{position: "absolute"}}>
-        Billige Comic ladet gli...
-      </div>
-    </div>;
 
     // Next.js requires hardcoded paths
     switch (id) {
       case "1":
-        return dynamic(() => import("../comics/1.svg"), {loading: () => loader})
+        return Comic1
       case "2":
-        return dynamic(() => import("../comics/2.svg"), {loading: () => loader})
+        return Comic2
       case "3":
-        return dynamic(() => import("../comics/3.svg"), {loading: () => loader})
+        return Comic3
       case "4":
-        return dynamic(() => import("../comics/4.svg"), {loading: () => loader})
+        return Comic4
       case "5":
-        return dynamic(() => import("../comics/5.svg"), {loading: () => loader})
+        return Comic5
       case "6":
-        return dynamic(() => import("../comics/6.svg"), {loading: () => loader})
+        return Comic6
       default:
         throw "Unknown ID: " + id
     }
