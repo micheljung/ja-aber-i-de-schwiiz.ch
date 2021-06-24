@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import React from "react";
+import Head from "next/head";
 
 export const comics = {
   "1": {title: "Kein Leid verursachen zu wollen ist extrem"},
@@ -36,6 +37,9 @@ class ComicComponent extends React.Component {
 
     return (
       <div className="grid grid-col-1 gap-4 w-auto mx-1">
+        <Head>
+          <title>JAIDS: {title}</title>
+        </Head>
         {this.props.showTitle && (<h1 className="text-md xl:text-xl text-center font-bold">{title}</h1>)}
         <div className="border border-black dark:border-gray-300 text-black dark:text-gray-300 xl:mx-auto xl:w-4/5">
           <Svg id={this.comicElementId} />
