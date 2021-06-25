@@ -14,7 +14,7 @@ export default function Comic({id = "1"}) {
       <main className="grid grid-cols-1 gap-4">
 
         <ComicNavigation comicId={id}/>
-        <ComicComponent id={id}/>
+        <ComicComponent id={id} comicElementId={comicElementId}/>
         <ComicNavigation comicId={id}/>
 
         <ComicDownloader comicElementId={comicElementId}/>

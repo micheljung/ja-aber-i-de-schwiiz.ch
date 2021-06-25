@@ -35,7 +35,6 @@ class ComicComponent extends React.Component {
 
   constructor(props) {
     super(props);
-    this.comicElementId = `comic-${props.id}`;
   }
 
   render() {
@@ -49,7 +48,7 @@ class ComicComponent extends React.Component {
         </Head>
         {this.props.showTitle && (<h1 className="text-md xl:text-xl text-center font-bold">{title}</h1>)}
         <div className="border border-black dark:border-gray-300 text-black dark:text-gray-300 xl:mx-auto xl:w-4/5">
-          <Svg id={this.comicElementId} />
+          <Svg id={this.props.comicElementId} />
         </div>
       </div>
     )
