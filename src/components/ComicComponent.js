@@ -9,6 +9,7 @@ export const comics = {
   "4": {title: "Es reicht, Vegetarier zu sein"},
   "5": {title: "Esst doch einfach richtiges Fleisch"},
   "6": {title: "Vegane Propaganda"},
+  "7": {title: "Menschen sind einfach Fleischfresser"},
 }
 
 const comicOptions = {loading: () => <div className="aspect-h-1 aspect-w-1">
@@ -17,12 +18,14 @@ const comicOptions = {loading: () => <div className="aspect-h-1 aspect-w-1">
     </div>
   </div>}
 
+// Next.js requires hardcoded paths
 const Comic1 = dynamic(() => import("../comics/1.svg"), comicOptions)
 const Comic2 = dynamic(() => import("../comics/2.svg"), comicOptions)
 const Comic3 = dynamic(() => import("../comics/3.svg"), comicOptions)
 const Comic4 = dynamic(() => import("../comics/4.svg"), comicOptions)
 const Comic5 = dynamic(() => import("../comics/5.svg"), comicOptions)
 const Comic6 = dynamic(() => import("../comics/6.svg"), comicOptions)
+const Comic7 = dynamic(() => import("../comics/7.svg"), comicOptions)
 
 class ComicComponent extends React.Component {
 
@@ -49,8 +52,6 @@ class ComicComponent extends React.Component {
   }
 
   loadComic(id) {
-
-    // Next.js requires hardcoded paths
     switch (id) {
       case "1":
         return Comic1
@@ -64,6 +65,8 @@ class ComicComponent extends React.Component {
         return Comic5
       case "6":
         return Comic6
+      case "7":
+        return Comic7
       default:
         throw "Unknown ID: " + id
     }
