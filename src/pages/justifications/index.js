@@ -1,5 +1,6 @@
 import JustificationComponent from "../../components/JustificationComponent";
 import NavigationComponent from "../../components/NavigationComponent";
+import Head from "next/head";
 
 class Category {
   constructor(id, title, justifications) {
@@ -894,11 +895,17 @@ function CategoryItem({category, counter}) {
 }
 
 export default function Justifications({data}) {
-  let counter = {value: 1};
+  const counter = {value: 1};
+  const title = "Rechtfertigungen für das Ausbeuten und Töten von Tieren";
 
   return (
     <div className="dark:text-gray-400">
-      <h1 className="text-xl font-bold mb-4 dark:text-gray-300">Rechtfertigungen für das Ausbeuten und Töten von Tieren</h1>
+
+      <Head>
+        <title>JAIDS: {title}</title>
+      </Head>
+
+      <h1 className="text-xl font-bold mb-4 dark:text-gray-300">{title}</h1>
 
       <NavigationComponent data={data}/>
 
