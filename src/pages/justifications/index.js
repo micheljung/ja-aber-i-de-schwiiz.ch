@@ -1,5 +1,5 @@
-import JustificationComponent from "./JustificationComponent";
-import NavigationComponent from "./NavigationComponent";
+import JustificationComponent from "../../components/JustificationComponent";
+import NavigationComponent from "../../components/NavigationComponent";
 
 class Category {
   constructor(id, title, justifications) {
