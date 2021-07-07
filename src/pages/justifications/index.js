@@ -897,19 +897,14 @@ export default function Justifications({data}) {
   let counter = {value: 1};
 
   return (
-    <div className="page-wrapper dark:text-gray-400">
-      <div className="content-wrapper">
-        <div className="container-fluid">
-          <h1 className="text-xl font-bold mb-4 text-gray-300">Rechtfertigungen für das Ausbeuten und Töten von Tieren</h1>
+    <div className="dark:text-gray-400">
+      <h1 className="text-xl font-bold mb-4 dark:text-gray-300">Rechtfertigungen für das Ausbeuten und Töten von Tieren</h1>
 
-          <NavigationComponent data={data}/>
+      <NavigationComponent data={data}/>
 
-          {data.map(category => {
-            return <CategoryItem category={category} counter={counter}/>
-          })}
-
-        </div>
-      </div>
+      {data.map(category => {
+        return <CategoryItem category={category} counter={counter}/>
+      })}
     </div>
   )
 }
