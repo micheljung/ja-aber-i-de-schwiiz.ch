@@ -12,6 +12,7 @@ export const comics = {
   "7": {title: "Menschen sind einfach Fleischfresser"},
   "8": {title: "Wir jagen mit Intelligenz"},
   "9": {title: "Tote Körper zu essen ist völlig normal"},
+  "10": {title: "Töten ist ok, wenn es ohne uns gar nicht leben würde."},
 }
 
 const comicOptions = {loading: () => <div className="aspect-h-1 aspect-w-1">
@@ -30,6 +31,7 @@ const Comic6 = dynamic(() => import("../comics/6.svg"), comicOptions)
 const Comic7 = dynamic(() => import("../comics/7.svg"), comicOptions)
 const Comic8 = dynamic(() => import("../comics/8.svg"), comicOptions)
 const Comic9 = dynamic(() => import("../comics/9.svg"), comicOptions)
+const Comic10 = dynamic(() => import("../comics/10.svg"), comicOptions)
 
 class ComicComponent extends React.Component {
 
@@ -74,6 +76,8 @@ class ComicComponent extends React.Component {
         return Comic8
       case "9":
         return Comic9
+      case "10":
+        return Comic10
       default:
         throw "Unknown ID: " + id
     }
