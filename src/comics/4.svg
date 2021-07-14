@@ -133,7 +133,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="487.13034"
      y="43.311546"
      id="text899"><tspan
@@ -261,32 +261,33 @@
        id="path42-0" />
   </g>
   <text
-    x="400.34082"
-    y="504.96582"
     xml:space="preserve"
-    id="text1087"
-    style="font-size:21.3333px"
-    font-family="sans-serif">ja-aber-i-de-schwiiz.ch</text>
+    style="font-size:24px;line-height:1.25;text-align:center;text-anchor:middle;"
+    x="498.73755"
+    y="507.21649"
+    id="text1495"><tspan
+       sodipodi:role="line"
+       id="tspan1493"
+       x="498.73755"
+       y="507.21649">ja-aber-i-de-schwiiz.ch</tspan></text>
+
   <g
-     id="g1113">
-    <g
-       fill="none"
-       stroke="#000000"
-       stroke-width="5px"
-       id="g1097">
-      <path
-         d="M 0,500 H 394.23"
-         id="path1089" />
-      <path
-         d="M 605.77,500 H 1000"
-         id="path1091" />
-      <path
-         d="M 500,484.23 V 0"
-         id="path1093" />
-      <path
-         d="M 500,515.77 V 1000"
-         id="path1095" />
-    </g>
+    fill="none"
+    stroke="#000000"
+    stroke-width="5px"
+    id="g1097">
+    <path
+      d="M 0,500 H 386.84911"
+      id="path1089" />
+    <path
+      d="M 613.242,500 H 1000"
+      id="path1091" />
+    <path
+      d="M 500,484.23 V 0"
+      id="path1093" />
+    <path
+      d="M 500,515.77 V 1000"
+      id="path1095" />
   </g>
   <g
      transform="translate(309.10464,7.8852096)"
@@ -445,7 +446,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="7.7015533"
      y="144.0988"
      id="text899-3"><tspan
@@ -466,7 +467,7 @@
        id="tspan1700">die schützisch nur, wenn du</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="130.95178"
      y="264.47952"
      id="text899-3-0"><tspan
@@ -487,7 +488,7 @@
        id="tspan1708">verzichtisch</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="985.43707"
      y="46.160664"
      id="text899-7"><tspan
@@ -508,7 +509,7 @@
        id="tspan1751">werdet sicher kei Tier tötet!</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="510.89423"
      y="178.91249"
      id="text899-3-5"><tspan
@@ -529,7 +530,7 @@
        id="tspan1798" /></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="628.60132"
      y="256.78842"
      id="text899-3-5-0"><tspan
@@ -560,7 +561,7 @@
        id="tspan978">rentabel isch.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:center;text-anchor:middle"
      x="825.60822"
      y="595.24762"
      id="text927-7"><tspan

@@ -140,7 +140,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="481.29852"
      y="59.349022"
      id="text899"><tspan
@@ -242,32 +242,32 @@
        id="path42-0" />
   </g>
   <text
-    x="400.34082"
-    y="504.96582"
     xml:space="preserve"
-    id="text1087"
-    style="font-size:21.3333px"
-    font-family="sans-serif">ja-aber-i-de-schwiiz.ch</text>
+    style="font-size:24px;line-height:1.25;text-align:center;text-anchor:middle;"
+    x="498.73755"
+    y="507.21649"
+    id="text1495"><tspan
+       sodipodi:role="line"
+       id="tspan1493"
+       x="498.73755"
+       y="507.21649">ja-aber-i-de-schwiiz.ch</tspan></text>
   <g
-     id="g1113">
-    <g
-       fill="none"
-       stroke="#000000"
-       stroke-width="5px"
-       id="g1097">
-      <path
-         d="M 0,500 H 394.23"
-         id="path1089" />
-      <path
-         d="M 605.77,500 H 1000"
-         id="path1091" />
-      <path
-         d="M 500,484.23 V 0"
-         id="path1093" />
-      <path
-         d="M 500,515.77 V 1000"
-         id="path1095" />
-    </g>
+    fill="none"
+    stroke="#000000"
+    stroke-width="5px"
+    id="g1097">
+    <path
+      d="M 0,500 H 386.84911"
+      id="path1089" />
+    <path
+      d="M 613.242,500 H 1000"
+      id="path1091" />
+    <path
+      d="M 500,484.23 V 0"
+      id="path1093" />
+    <path
+      d="M 500,515.77 V 1000"
+      id="path1095" />
   </g>
   <g
      transform="translate(309.10464,7.8852096)"
@@ -426,7 +426,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="506.3212"
      y="44.958065"
      id="text899-3"><tspan
@@ -447,7 +447,7 @@
        id="tspan1080">gah und Mensche verschüsse.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="989.81085"
      y="184.66611"
      id="text899-7"><tspan
@@ -463,7 +463,7 @@
        id="tspan1022">Mensche töte isch illegal!</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="12.274623"
      y="550.69031"
      id="text899-3-5"><tspan
@@ -479,7 +479,7 @@
        id="tspan1029">würsch es mache?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="137.27147"
      y="646.06165"
      id="text899-3-5-0"><tspan
@@ -505,7 +505,7 @@
        id="tspan1150">töte?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:center;text-anchor:middle"
      x="665.23352"
      y="685.64062"
      id="text927-7"><tspan

@@ -625,7 +625,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
      x="481.29852"
      y="59.349022"
      id="text899"><tspan
@@ -720,12 +720,15 @@
        id="path42-0" />
   </g>
   <text
-     x="400.34082"
-     y="504.96582"
-     xml:space="preserve"
-     id="text1087"
-     style="font-size:21.3333px"
-     font-family="sans-serif">ja-aber-i-de-schwiiz.ch</text>
+    xml:space="preserve"
+    style="font-size:24px;line-height:1.25;text-align:center;text-anchor:middle;"
+    x="498.73755"
+    y="507.21649"
+    id="text1495"><tspan
+       sodipodi:role="line"
+       id="tspan1493"
+       x="498.73755"
+       y="507.21649">ja-aber-i-de-schwiiz.ch</tspan></text>
   <g
      id="g1113">
     <g
@@ -734,11 +737,11 @@
        stroke-width="5px"
        id="g1097">
       <path
-         d="M 0,500 H 394.23"
-         id="path1089" />
+        d="M 0,500 H 386.84911"
+        id="path1089" />
       <path
-         d="M 605.77,500 H 1000"
-         id="path1091" />
+        d="M 613.242,500 H 1000"
+        id="path1091" />
       <path
          d="M 500,484.23 V 0"
          id="path1093" />
@@ -904,7 +907,7 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="507.77914"
      y="151.38857"
      id="text899-3"><tspan
@@ -925,7 +928,7 @@
        id="tspan1021">beihdruckend.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="988.35291"
      y="98.646942"
      id="text899-7"><tspan
@@ -936,7 +939,7 @@
        id="tspan1022">Aber mir händ au Eckzäh.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="23.649569"
      y="151.6368"
      id="text899-5"><tspan
@@ -947,7 +950,7 @@
        id="tspan955-8">So wie en Leu?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
      x="456.52988"
      y="212.87076"
      id="text899-32"><tspan
@@ -958,14 +961,14 @@
        id="tspan955-0">Ja genau.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;white-space:pre;inline-size:308.781"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;white-space:pre;inline-size:308.781"
      x="464.66791"
      y="-125.37411"
      id="text899-6-5"
      transform="translate(419.60375,55.858744)" />
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="25.629852"
      y="555.87817"
      id="text899-5-3"><tspan
@@ -976,7 +979,7 @@
        id="tspan955-8-9">Zeig mal dini Klaue</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="313.70532"
      y="591.59491"
      id="text899-5-3-5"><tspan
@@ -987,7 +990,7 @@
        id="tspan955-8-9-0">Ich han kei.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="13.413214"
      y="642.23529"
      id="text899-5-3-5-4"><tspan
@@ -1003,7 +1006,7 @@
        id="tspan1233">Händ jage und roh ässe?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="399.77057"
      y="707.84314"
      id="text899-5-3-5-1"><tspan
@@ -1014,7 +1017,7 @@
        id="tspan955-8-9-0-1">Nei.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;text-anchor:start"
      x="514.23566"
      y="47.859558"
      id="text899-3-6"><tspan
@@ -1025,7 +1028,7 @@
        id="tspan1021-2">Du gsehsch nöd us wie en Leu.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="946.99817"
      y="207.05302"
      id="text899-7-4"><tspan
@@ -1036,7 +1039,7 @@
        id="tspan1022-6">Gell.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="525.1084"
      y="552.23016"
      id="text899-5-3-6"><tspan
@@ -1047,7 +1050,7 @@
        id="tspan955-8-9-3">Woher häsch denn dis Fleisch?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="981.42133"
      y="605.22681"
      id="text899-7-7"><tspan
@@ -1058,7 +1061,7 @@
        id="tspan1022-65">Us de Migros.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="520.47021"
      y="628.77576"
      id="text899-5-3-6-5"><tspan
@@ -1069,7 +1072,7 @@
        id="tspan955-8-9-3-3">Fertig verpackt?</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:end;text-anchor:end"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:end;text-anchor:end"
      x="932.49634"
      y="680.38599"
      id="text899-7-7-4"><tspan
@@ -1080,7 +1083,7 @@
        id="tspan1022-65-8">Ja.</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+     style="font-size:32px;line-height:1.25;font-family:'MJ Handwriting';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
      x="520.11926"
      y="707.20514"
      id="text899-5-3-6-5-2"><tspan

@@ -47,7 +47,11 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg120" />
+     inkscape:current-layer="svg120" />  <style
+  id="style2">text {
+  font-family:'MJ Handwriting';
+  }</style>
+
   <text
      x="510.60992"
      y="596"
@@ -289,7 +293,7 @@
   </g>
   <text
     xml:space="preserve"
-    style="font-size:24px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle;"
+    style="font-size:24px;line-height:1.25;text-align:center;text-anchor:middle;"
     x="498.73755"
     y="507.21649"
     id="text1495"><tspan
