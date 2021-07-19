@@ -13,8 +13,8 @@ export const comics = {
   "8": {title: "Wir jagen mit Intelligenz"},
   "9": {title: "Tote Körper zu essen ist völlig normal"},
   "10": {title: "Wer Leben schenkt, darf es auch wieder nehmen"},
-  "11": {title: "Der feine Unterschied"},
-  "12": {title: "Holocaust-Vergleiche sind völlig daneben"},
+  "11": {title: "Holocaust-Vergleiche sind völlig daneben"},
+  "12": {title: "Der feine Unterschied"},
 }
 
 const comicOptions = {loading: () => <div className="aspect-h-1 aspect-w-1">
