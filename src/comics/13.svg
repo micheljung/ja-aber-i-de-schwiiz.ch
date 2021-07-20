@@ -42,12 +42,12 @@
      id="namedview92"
      showgrid="false"
      inkscape:zoom="0.97"
-     inkscape:cx="455.6701"
+     inkscape:cx="455.15464"
      inkscape:cy="505.6701"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g58481"
+     inkscape:current-layer="svg90"
      inkscape:document-rotation="0"
      inkscape:pagecheckerboard="0" />
   <style
@@ -79,7 +79,7 @@
      sodipodi:nodetypes="ccccc" />
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="677.93842"
      y="886.49066"
      id="text15509"><tspan
@@ -89,7 +89,7 @@
        y="886.49066">Tiere</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="360.87048"
      y="531.69604"
      id="text22813"><tspan
@@ -99,7 +99,7 @@
        y="531.69604">Menschen</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="391.83612"
      y="893.35339"
      id="text24203"><tspan
@@ -109,7 +109,7 @@
        y="893.35339">Katzen</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="219.29433"
      y="570.87134"
      id="text28689"><tspan
@@ -119,7 +119,7 @@
        y="570.87134">Kühe</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="365.44113"
      y="785.5293"
      id="text30673"><tspan
@@ -129,7 +129,7 @@
        y="785.5293">Enten</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="713.88177"
      y="763.65479"
      id="text32129"><tspan
@@ -139,7 +139,7 @@
        y="763.65479">Hunde</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     style="font-size:40px;line-height:1.25;text-align:center;text-anchor:middle"
      x="631.7478"
      y="559.41333"
      id="text35223"><tspan
@@ -150,7 +150,7 @@
        style="text-align:start;text-anchor:start">Schweine</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="201.80159"
      y="821.38672"
      id="text41556"><tspan
@@ -170,17 +170,17 @@
      sodipodi:nodetypes="cccccc" />
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
-     x="177.44688"
-     y="702.72803"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
+     x="178.3541"
+     y="703.75897"
      id="text30673-1"><tspan
        sodipodi:role="line"
        id="tspan30671-5"
-       x="177.44688"
-       y="702.72803">Delfine</tspan></text>
+       x="178.3541"
+       y="703.75897">Delfine</tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 171.49228,658.38328 c 0,0 4.1102,36.92599 0,54.63918 25.34066,10.46919 131.95876,3.92851 131.95876,3.92851 0,0 10.43435,-37.50824 -0.0625,-55.73264 -2.86585,-6.62305 -131.89623,-2.83505 -131.89623,-2.83505 z"
+     d="m 164.27579,658.38328 c 0,0 4.1102,36.92599 0,54.63918 25.34066,10.46919 139.17525,3.92851 139.17525,3.92851 0,0 10.43435,-37.50824 -0.0625,-55.73264 -2.86585,-6.62305 -139.11272,-2.83505 -139.11272,-2.83505 z"
      id="path42067-2-6"
      sodipodi:nodetypes="cccccc" />
   <path
@@ -195,7 +195,7 @@
      sodipodi:nodetypes="cccccc" />
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     style="font-size:40px;line-height:1.25;text-align:center;text-anchor:middle"
      x="713.71002"
      y="663.64459"
      id="text32129-6"><tspan
@@ -233,14 +233,14 @@
      transform="translate(-1.0309222)">
     <text
        xml:space="preserve"
-       style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+       style="font-size:40px;line-height:1.25;text-align:center;text-anchor:middle"
        x="499.97998"
        y="285.69055"
        id="text7070"><tspan
          sodipodi:role="line"
          x="499.97998"
          y="285.69055"
-         id="tspan58389">Ich liebe                  ,</tspan><tspan
+         id="tspan58389">Ich liebe ___________,</tspan><tspan
          sodipodi:role="line"
          x="499.97998"
          y="335.69055"
@@ -253,15 +253,10 @@
          x="499.97998"
          y="435.69055"
          id="tspan9307">zu töten, finde ich in Ordnung.</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 465.02322,236.83403 c 0,0 4.1102,36.92598 0,54.63918 26.93446,-3.87499 203.92555,0.0962 203.79509,1.27034 0,0 10.43435,-37.50824 -0.0625,-55.73264 -7.48806,-0.46011 -204.33397,0.62501 -203.73256,-0.17688 z"
-       id="path42067-7-0"
-       sodipodi:nodetypes="cccccc" />
   </g>
   <text
      xml:space="preserve"
-     style="font-size:64px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     style="font-size:64px;line-height:1.25;text-align:center;text-anchor:middle"
      x="499.93597"
      y="157.73196"
      id="text51205"><tspan
@@ -272,7 +267,7 @@
        style="font-size:64px">Fülle die Lücke</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     style="font-size:40px;line-height:1.25;text-align:center;text-anchor:middle"
      x="455.36426"
      y="659.25671"
      id="text22813-1"><tspan
@@ -287,7 +282,7 @@
      sodipodi:nodetypes="cccccc" />
   <text
      xml:space="preserve"
-     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:start;text-anchor:start"
+     style="font-size:40px;line-height:1.25;text-align:start;text-anchor:start"
      x="545.5752"
      y="785.29419"
      id="text32129-8"><tspan
@@ -297,7 +292,7 @@
        y="785.29419">Kälber</tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 537.97263,740.22546 c 0,0 4.1102,36.92599 0,54.63918 25.34066,10.46919 113.40206,4.18624 113.40206,4.18624 0,0 10.43435,-37.50824 -0.0625,-55.73264 -2.86585,-6.62305 -113.33953,-3.09278 -113.33953,-3.09278 z"
+     d="m 532.81799,740.22546 c 0,0 4.1102,36.92599 0,54.63918 25.34066,10.46919 118.5567,4.18624 118.5567,4.18624 0,0 10.43435,-37.50824 -0.0625,-55.73264 -2.86585,-6.62305 -118.49417,-3.09278 -118.49417,-3.09278 z"
      id="path42067-21-8"
      sodipodi:nodetypes="cccccc" />
 </svg>
