@@ -204,7 +204,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-height="1137"
      id="namedview92"
      showgrid="false"
      inkscape:zoom="0.68589358"
@@ -352,4 +352,24 @@
        x="491.32986"
        y="116.63616"
        style="font-size:64px">Entscheidungshilfe für Menschen</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     x="269.72116"
+     y="546.73206"
+     id="text3660"><tspan
+       sodipodi:role="line"
+       id="tspan3658"
+       x="269.72116"
+       y="546.73206">Ja</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';text-align:center;text-anchor:middle"
+     x="723.14429"
+     y="545.27411"
+     id="text4654"><tspan
+       sodipodi:role="line"
+       id="tspan4652"
+       x="723.14429"
+       y="545.27411">Nein</tspan></text>
 </svg>
