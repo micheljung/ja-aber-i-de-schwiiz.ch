@@ -23,6 +23,7 @@ export const comics = {
   "18": {title: "Schrödingers Kuh"},
   "19": {title: "Wer benötigt Kuhmilch"},
   "20": {title: "Vegan ist zu teuer"},
+  "21": {title: "Nicht vegan zu sein ist nicht egoistisch"},
 }
 
 const comicOptions = {loading: () => <div className="aspect-h-1 aspect-w-1">
@@ -52,6 +53,7 @@ const Comic17 = dynamic(() => import("../comics/17.svg"), comicOptions)
 const Comic18 = dynamic(() => import("../comics/18.svg"), comicOptions)
 const Comic19 = dynamic(() => import("../comics/19.svg"), comicOptions)
 const Comic20 = dynamic(() => import("../comics/20.svg"), comicOptions)
+const Comic21 = dynamic(() => import("../comics/21.svg"), comicOptions)
 
 class ComicComponent extends React.Component {
 
@@ -118,6 +120,8 @@ class ComicComponent extends React.Component {
         return Comic19
       case "20":
         return Comic20
+      case "21":
+        return Comic21
       default:
         throw "Unknown ID: " + id
     }
