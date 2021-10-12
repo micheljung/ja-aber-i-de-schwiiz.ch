@@ -40,9 +40,11 @@ let harmJustifications = [
       In der Eierindustrie werden fast nur Weibchen benötigt, denn Männchen legen keine Eier. Daher werden Männchen
       direkt nach dem Schlüpfen aussortiert und getötet, da sie keinem Zweck dienen. Hierfür werden sie entweder zu
       Tode erstickt oder lebendig geschreddert. Die Industrie nennt das <q>Homogenisierung</q>. Ihre Schwestern werden
-      in Gefangenschaft gehalten bis ihre Eierproduktion abnimmt und sie nicht mehr profitabel sind. Anschliessend
-      werden sie zum Schlachthaus gebracht, wo ihnen die Kehle aufgeschlitzt und sie zu Tode verbluten. Dies ist
-      üblicherweise nach 1 - 2 Jahre der Fall. Die natürliche Lebenserwartung beträgt bis zu 10 Jahre.
+      in Gefangenschaft gehalten in der sie als Eierproduktionsmaschinen dienen. Das ursprüngliche Huhn legte ca. ein
+      Ei pro Monat. Durch extreme Züchtung legen Hühner heute fast jeden tag ein Ei. Sobald ihre Eierproduktion abnimmt
+      und sie nicht mehr profitabel sind, werden sie zum Schlachthaus gebracht, wo ihnen die Kehle aufgeschlitzt wird
+      und sie zu Tode verbluten. Dies ist üblicherweise nach 1 - 2 Jahre der Fall. Die natürliche Lebenserwartung
+      beträgt bis zu 10 Jahre.
       </p>`
   ),
   new Justification(
