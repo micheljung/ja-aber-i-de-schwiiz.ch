@@ -21,7 +21,9 @@ function ${componentName}(props, ref) {
   useEffect(() => {
     setTimeout(() => {
       const svgElement = svgRef.current;
-      svgElement.innerHTML = svgElement.innerHTML.replaceAll("&amp;", "&");
+      if(svgElement) {
+        svgElement.innerHTML = svgElement.innerHTML.replaceAll("&amp;", "&");
+      }
     }, 0);
   });
 
