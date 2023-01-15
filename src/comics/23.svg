@@ -6,7 +6,7 @@
    viewBox="0 0 1e3 1e3"
    id="svg90"
    sodipodi:docname="23.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -36,21 +36,29 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2558"
-     inkscape:window-height="1360"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
      id="namedview92"
      showgrid="false"
-     inkscape:zoom="0.97"
-     inkscape:cx="302.57732"
-     inkscape:cy="425.25773"
-     inkscape:window-x="-7"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.68589358"
+     inkscape:cx="545.2741"
+     inkscape:cy="479.66625"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg90"
      inkscape:document-rotation="0"
      inkscape:pagecheckerboard="0"
      showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <sodipodi:guide
+       position="107.88846,470.76338"
+       orientation="1,0"
+       id="guide397"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <style
      id="style2">text { 
     font-family:'MJ Handwriting';
@@ -75,36 +83,31 @@
      id="g24-8-5" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 130.48688,43.14723 C 417.81616,35.833315 625.33677,57.403293 869.6686,47.521087 861.88715,343.5177 876.78133,711.36278 865.11787,956.84883 624.41202,948.96016 381.89567,944.23986 130.31,955.39087 138.70968,702.44088 141.32853,301.59474 130.48688,43.14723 Z"
+     d="M 38.635896,43.14723 C 325.96518,35.833315 714.27185,57.403293 958.60368,47.521087 950.82223,343.5177 965.71641,711.36278 954.05295,956.84883 713.3471,948.96016 290.04469,944.23986 38.459016,955.39087 46.858696,702.44088 49.477546,301.59474 38.635896,43.14723 Z"
      id="path10268"
      sodipodi:nodetypes="ccccc" />
   <text
      xml:space="preserve"
      style="font-size:64px;line-height:1.25;text-align:center;text-anchor:middle"
-     x="381.43988"
-     y="450.63901"
+     x="164.20502"
+     y="420.022"
      id="text7070"><tspan
        sodipodi:role="line"
-       x="381.43988"
-       y="450.63901"
-       id="tspan3603"
-       style="font-size:64px;text-align:start;text-anchor:start">Ich unterstütze</tspan><tspan
-       sodipodi:role="line"
-       x="381.43988"
-       y="530.63898"
+       x="164.20502"
+       y="420.022"
        style="font-size:64px;text-align:start;text-anchor:start"
-       id="tspan34497">Tierquälerei</tspan></text>
+       id="tspan34497">Ich unterstütze Tierquälerei</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.96452"
-     x="384.21439"
-     y="724.44183"
+     x="165.52158"
+     y="638.42267"
      id="text17249"><tspan
        sodipodi:role="line"
        id="tspan17247"
-       x="384.21439"
-       y="724.44183"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';stroke-width:1.96452">Ich bin vegan</tspan></text>
+       x="165.52158"
+       y="638.42267"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'MJ Handwriting';-inkscape-font-specification:'MJ Handwriting';stroke-width:1.96452">Ich lebe vegan</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:96px;line-height:1.25;text-align:center;text-anchor:middle"
@@ -118,12 +121,12 @@
        id="tspan40046">Wähle aus</tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 267.25345,491.21782 c 0,0 -3.85247,-26.87444 0.25773,-44.58763 -25.34066,-10.46919 -50.8211,-2.38212 -50.8211,-2.38212 0,0 -10.69208,27.45669 -0.19523,45.68109 2.86585,6.62305 50.75857,1.28866 50.75857,1.28866 z"
+     d="m 134.57981,422.69407 c 0,0 -3.85247,-26.87444 0.25773,-44.58763 -25.34066,-10.46919 -50.821099,-2.38212 -50.821099,-2.38212 0,0 -10.69208,27.45669 -0.19523,45.68109 2.86585,6.62305 50.758569,1.28866 50.758569,1.28866 z"
      id="path42067-0-9-3"
      sodipodi:nodetypes="cccccc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 271.18193,728.08483 c 0,0 -3.85247,-26.87444 0.25773,-44.58763 -25.34066,-10.46919 -50.8211,-2.38212 -50.8211,-2.38212 0,0 -10.69207,27.45669 -0.19523,45.68109 2.86585,6.62305 50.75857,1.28866 50.75857,1.28866 z"
+     d="m 138.50829,637.69179 c 0,0 -3.85247,-26.87444 0.25773,-44.58763 -25.34066,-10.46919 -50.821103,-2.38212 -50.821103,-2.38212 0,0 -10.69207,27.45669 -0.19523,45.68109 2.86585,6.62305 50.758573,1.28866 50.758573,1.28866 z"
      id="path42067-0-9-3-4"
      sodipodi:nodetypes="cccccc" />
 </svg>
