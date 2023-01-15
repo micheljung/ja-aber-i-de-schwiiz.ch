@@ -19,10 +19,8 @@ function ${componentName}(props, ref) {
   const svgRef = useRef();
   
   useEffect(() => {
-    setTimeout(() => {
-      const svgElement = svgRef.current;
-      svgElement.innerHTML = svgElement.innerHTML.replaceAll("&amp;", "&");
-    }, 0);
+    const svgElement = svgRef.current;
+    svgElement.innerHTML = svgElement.innerHTML.replaceAll("&amp;", "&");
   });
 
   return ${jsx};
